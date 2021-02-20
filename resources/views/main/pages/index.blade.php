@@ -14,6 +14,7 @@
 @section('content')
 
   @include('main.layouts.partials.mainpage.first-screen')
+  <example-component></example-component>
   @include('main.layouts.partials.mainpage.wave-t')
   @include('main.layouts.partials.mainpage.cards-vertical')
   @include('main.layouts.partials.mainpage.cards')
