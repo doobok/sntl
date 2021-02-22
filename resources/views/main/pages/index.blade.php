@@ -4,8 +4,8 @@
 @component('main.components.meta')
 
   @slot('title') SNTL главная @endslot
-  @slot('description') description   @endslot
-  @slot('image')  @endslot
+  @slot('description') description @endslot
+  @slot('image') @endslot
   @slot('date') 2021 @endslot
 
 @endcomponent
@@ -14,10 +14,14 @@
 @section('content')
 
   @include('main.layouts.partials.mainpage.first-screen')
-  <example-component></example-component>
   @include('main.layouts.partials.mainpage.wave-t')
+
   @include('main.layouts.partials.mainpage.cards-vertical')
+  @include('main.layouts.partials.mainpage.wave-g-b')
+  <mp-cases></mp-cases>
+  @include('main.layouts.partials.mainpage.wave-g-t')
   @include('main.layouts.partials.mainpage.cards')
+  @include('main.layouts.partials.mainpage.partners')
   @include('main.layouts.partials.mainpage.pricing')
   @include('main.layouts.partials.mainpage.wave-b')
   @include('main.layouts.partials.mainpage.call-to-action')
@@ -25,7 +29,7 @@
 @endsection
 
 @section('js')
-  <script>
+  {{-- <script>
     var scrollpos = window.scrollY;
     var header = document.getElementById("header");
     var navcontent = document.getElementById("nav-content");
@@ -105,5 +109,5 @@
       }
       return false;
     }
-  </script>
+  </script> --}}
 @endsection

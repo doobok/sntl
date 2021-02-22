@@ -73,5 +73,6 @@
         </ul>
       </div>
     </div>
+    <p class="text-center text-gray-500 pb-2">{{ __('site.copyright') }} © {{ config('app.name') }} 2020 - {{ date("Y") }}</p>
   </div>
 </footer>
