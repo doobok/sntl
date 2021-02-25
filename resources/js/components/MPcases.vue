@@ -1,13 +1,6 @@
 <template>
-  <div class="antialiased gradient font-sans pb-12">
-    <div class="max-w-6xl mx-auto">
-        <div class="flex flex-wrap items-center justify-center ">
-          <h2 class="w-full my-2 pt-2 text-5xl font-bold leading-tight text-center text-white">
-            Наши проекты
-          </h2>
-          <div class="w-full mb-4">
-            <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-          </div>
+  <div class="flex items-center justify-center ">
+
             <div class="max-w-sm w-full sm:w-1/2 lg:w-1/3 py-6 px-3"
             v-for="t in 3"
             >
@@ -51,8 +44,47 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
 
+
+  </div>
 </template>
+
+<script>
+export default {
+data() {
+    return {
+      currentOffset: 0,
+      windowSize: 3,
+      paginationFactor: 220,
+      items: [
+        {name: 'Kin Khao', tag: ["Thai"]},
+        {name: 'Jū-Ni', tag: ["Sushi", "Japanese", "$$$$"]},
+        {name: 'Delfina', tag: ["Pizza", "Casual"]},
+        {name: 'San Tung', tag: ["Chinese", "$$"]},
+        {name: 'Anchor Oyster Bar', tag: ["Seafood", "Cioppino"]},
+        {name: 'Locanda', tag: ["Italian"]},
+        {name: 'Garden Creamery', tag: ["Ice cream"]},
+      ]
+    }
+  },
+  computed: {
+    atEndOfList() {
+      return this.currentOffset <= (this.paginationFactor * -1) * (this.items.length - this.windowSize);
+    },
+    atHeadOfList() {
+      return this.currentOffset === 0;
+    },
+  },
+  methods: {
+    moveCarousel(direction) {
+      // Find a more elegant way to express the :style. consider using props to make it truly generic
+      if (direction === 1 && !this.atEndOfList) {
+        this.currentOffset -= this.paginationFactor;
+      } else if (direction === -1 && !this.atHeadOfList) {
+        this.currentOffset += this.paginationFactor;
+      }
+    },
+  }
+}
+
+</script>

@@ -21,7 +21,7 @@
       </div>
       <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
-          <li class="mr-3">
+          <li class="mr-3 menu--border">
             <a class="inline-block py-2 px-4 text-gray-700 font-bold no-underline text-lg" href="#">О нас</a>
           </li>
           <li class="mr-3">
