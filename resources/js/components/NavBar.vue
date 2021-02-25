@@ -1,5 +1,5 @@
 <template>
-  <nav id="header" class="fixed w-full z-30 top-0 text-white">
+  <nav id="header" class="fixed w-full z-30 top-8 text-white">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
         <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
@@ -117,12 +117,15 @@
           document.addEventListener("scroll", function () {
             /*Apply classes for slide in bar*/
             scrollpos = window.scrollY;
-            if (scrollpos > 10) {
+            if (scrollpos > 35) {
               header.classList.add("bg-white");
               navaction.classList.remove("bg-white");
               navaction.classList.add("gradient");
               navaction.classList.remove("text-gray-800");
               navaction.classList.add("text-white");
+              header.classList.remove("top-8");
+              header.classList.add("top-0");
+              header.classList.add("fixed");
               //Use to switch toggleColour colours
               for (var i = 0; i < toToggle.length; i++) {
                 toToggle[i].classList.add("t--ptimary");
@@ -137,6 +140,9 @@
               navaction.classList.add("bg-white");
               navaction.classList.remove("text-white");
               navaction.classList.add("text-gray-800");
+              header.classList.remove("top-0");
+              header.classList.add("top-8");
+              header.classList.remove("fixed");
               //Use to switch toggleColour colours
               for (var i = 0; i < toToggle.length; i++) {
                 toToggle[i].classList.add("text-white");

@@ -18,9 +18,9 @@
 
   @include('main.layouts.partials.mainpage.cards-vertical')
   @include('main.layouts.partials.mainpage.wave-g-b')
+  @include('main.layouts.partials.mainpage.cases')
   @include('main.layouts.partials.mainpage.wave-g-t')
   @include('main.layouts.partials.mainpage.cards')
-  @include('main.layouts.partials.mainpage.cases')
   @include('main.layouts.partials.mainpage.partners')
   {{-- @include('main.layouts.partials.mainpage.customers') --}}
   @include('main.layouts.partials.mainpage.pricing')

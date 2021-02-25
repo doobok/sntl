@@ -1,9 +1,15 @@
 <template>
-  <div class="flex items-center justify-center ">
+  <div class="">
+    <carousel
+        :perPageCustom="[[400, 1], [500, 2], [768, 3]]"
+        autoplay
+        :autoplayTimeout="5000"
+        loop
+        >
+      <template v-for="t in 10">
 
-            <div class="max-w-sm w-full sm:w-1/2 lg:w-1/3 py-6 px-3"
-            v-for="t in 3"
-            >
+      <slide>
+            <div class="w-auto py-6 px-3">
                 <div class="bg-white shadow-xl rounded-lg overflow-hidden">
                     <div class="bg-cover bg-center h-56 p-4" style="background-image: url(https://images.unsplash.com/photo-1475855581690-80accde3ae2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)">
                         <div class="flex justify-end">
@@ -44,46 +50,29 @@
                     </div>
                 </div>
             </div>
+          </slide>
+        </template>
 
+        </carousel>
 
   </div>
 </template>
 
 <script>
+import { Carousel, Slide } from 'vue-carousel';
 export default {
+  components: { Carousel, Slide },
 data() {
     return {
-      currentOffset: 0,
-      windowSize: 3,
-      paginationFactor: 220,
-      items: [
-        {name: 'Kin Khao', tag: ["Thai"]},
-        {name: 'Jū-Ni', tag: ["Sushi", "Japanese", "$$$$"]},
-        {name: 'Delfina', tag: ["Pizza", "Casual"]},
-        {name: 'San Tung', tag: ["Chinese", "$$"]},
-        {name: 'Anchor Oyster Bar', tag: ["Seafood", "Cioppino"]},
-        {name: 'Locanda', tag: ["Italian"]},
-        {name: 'Garden Creamery', tag: ["Ice cream"]},
-      ]
+      // currentOffset: 0,
+
     }
   },
   computed: {
-    atEndOfList() {
-      return this.currentOffset <= (this.paginationFactor * -1) * (this.items.length - this.windowSize);
-    },
-    atHeadOfList() {
-      return this.currentOffset === 0;
-    },
+
   },
   methods: {
-    moveCarousel(direction) {
-      // Find a more elegant way to express the :style. consider using props to make it truly generic
-      if (direction === 1 && !this.atEndOfList) {
-        this.currentOffset -= this.paginationFactor;
-      } else if (direction === -1 && !this.atHeadOfList) {
-        this.currentOffset += this.paginationFactor;
-      }
-    },
+
   }
 }
 
