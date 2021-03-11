@@ -1,12 +1,12 @@
 <div class="w-full text-gray-600 bg-gray-200 align-baseline">
   <div class="w-full container mx-auto flex flex-wrap justify-between items-center mt-0 py-1">
     <div class="pl-4 flex items-center">
-      <span class="mr-4 hidden md:block">г. Киев, ул. </span>
+      <span class="mr-4 hidden md:block">{{__('site.global-address')}}</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20px" height="20px" fill="currentColor">
         <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
       </svg>
-      <span class="ml-1 mr-4">(044) 123-44-55</span>
-      <span class="hidden md:block">пн-пт 10.00-20.00</span>
+      <span class="ml-1 mr-4"><a href="tel:+38{{preg_replace("/[^0-9]/", '', setting('site.phone'))}}">{{setting('site.phone')}}</a></span>
+      <span class="hidden md:block">{{__('site.shedule-days') . ' ' . setting('site.schedule')}}</span>
     </div>
     <div class="flex">
       <span class="mx-1">
@@ -24,8 +24,6 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
         </a>
       </span>
-
-
     </div>
   </div>
 </div>

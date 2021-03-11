@@ -19,8 +19,9 @@
           </svg>
         </button>
       </div>
-      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
-        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20 text-gray-700 lg:text-white" id="nav-content">
+
+        <!-- <ul class="list-reset lg:flex justify-end flex-1 items-center">
           <li class="mr-3 menu--border">
             <a class="inline-block py-2 px-4 text-gray-700 font-bold no-underline text-lg" href="#">О нас</a>
           </li>
@@ -39,35 +40,26 @@
           <li class="mr-3">
             <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Контакты</a>
           </li>
-        </ul>
+        </ul> -->
 
-<div @mouseover="openLng = true" @mouseleave="leaveLng()" class="relative inline-block text-left">
-  <div>
-    <button @click="openLng = ! openLng" class="underline inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-700 transition duration-150 ease-in-out">
-      ru
-      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-      </svg>
-    </button>
-  </div>
+        <nav-menu></nav-menu>
 
-  <!--
-    Dropdown panel, show/hide based on dropdown state.
-
-    Entering: "transition ease-out duration-100"
-      From: "transform opacity-0 scale-95"
-      To: "transform opacity-100 scale-100"
-    Leaving: "transition ease-in duration-75"
-      From: "transform opacity-100 scale-100"
-      To: "transform opacity-0 scale-95"
-  -->
-  <div v-show="openLng" class="origin-top-right absolute right-0 mt-0 w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-    <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">en</a>
-      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">ua</a>
-    </div>
-  </div>
-</div>
+        <div @mouseover="openLng = true" @mouseleave="leaveLng()" class="relative inline-block text-left ml-3 float-right">
+          <div>
+            <button @click="openLng = ! openLng" class="underline inline-flex items-center justify-center p-2 rounded-md text-gray-600 opacity-40 hover:opacity-100 hover:text-gray-500 bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-700 transition duration-150 ease-in-out">
+              ru
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div v-show="openLng" class="origin-top-right absolute right-0 mt-0 w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+            <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">en</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">ua</a>
+            </div>
+          </div>
+        </div>
 
         <!-- </div> -->
         <span id="navAction"></span>
@@ -97,7 +89,6 @@
         },
         methods: {
           leaveLng() {
-            console.log('leave');
             if (this.openLng) {
               setTimeout(() => {
                 this.openLng = false;
@@ -134,6 +125,7 @@
               header.classList.add("shadow");
               navcontent.classList.remove("bg-gray-100");
               navcontent.classList.add("bg-white");
+              navcontent.classList.remove("lg:text-white");
             } else {
               header.classList.remove("bg-white");
               navaction.classList.remove("gradient");
@@ -151,6 +143,7 @@
               header.classList.remove("shadow");
               navcontent.classList.remove("bg-white");
               navcontent.classList.add("bg-gray-100");
+              navcontent.classList.add("lg:text-white");
             }
           });
           // dropdown menu

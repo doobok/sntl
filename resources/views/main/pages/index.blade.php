@@ -17,15 +17,17 @@
   @include('main.layouts.partials.mainpage.wave-t')
 
   @include('main.layouts.partials.mainpage.cards-vertical')
-  @include('main.layouts.partials.mainpage.wave-g-b')
-  @include('main.layouts.partials.mainpage.cases')
-  @include('main.layouts.partials.mainpage.wave-g-t')
-  @include('main.layouts.partials.mainpage.cards')
-  @include('main.layouts.partials.mainpage.partners')
-  {{-- @include('main.layouts.partials.mainpage.customers') --}}
-  @include('main.layouts.partials.mainpage.pricing')
   @include('main.layouts.partials.mainpage.wave-b')
-  @include('main.layouts.partials.mainpage.call-to-action')
+  @include('main.layouts.partials.mainpage.numbers')
+  @include('main.layouts.partials.mainpage.wave-t')
+  @include('main.layouts.partials.mainpage.cases')
+  {{-- @include('main.layouts.partials.mainpage.cards') --}}
+  @include('main.layouts.partials.mainpage.partners')
+  @include('main.layouts.partials.mainpage.consumers')
+  {{-- @include('main.layouts.partials.mainpage.customers') --}}
+  {{-- @include('main.layouts.partials.mainpage.pricing') --}}
+  @include('main.layouts.partials.mainpage.wave-b')
+  {{-- @include('main.layouts.partials.mainpage.call-to-action') --}}
 
 @endsection
 
