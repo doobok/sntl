@@ -1,4 +1,3 @@
-<template>
   <ul class="list-reset lg:flex justify-end flex-1 items-center">
         <!--Regular Link-->
         <li class="menu--border">
@@ -174,5 +173,3 @@
 
         -->
           </ul>
-
-</template>
