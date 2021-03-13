@@ -32,7 +32,7 @@
 
   <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
     <div class="pl-4 flex items-center">
-      <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+      <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="{{route('maingage')}}">
         <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650">
           <path
           class="plane-take-off"
@@ -53,7 +53,25 @@
 
       @include('main.layouts.partials.navbar-menu')
 
-      <nav-bar lang="{{app()->getLocale()}}"></nav-bar>
+      <div class="lg:hidden opacity-80 float-right">
+        @if (app()->getLocale() != 'ru')
+          <span>
+            <a href="{{route('setlocale', ['lang' => 'ru'])}}" class="px-4 py-2 ml-1 text-sm text-gray-700 bg-gray-100 hover:bg-gray-200 hover:text-gray-900" rel="nofollow">RU</a>
+          </span>
+        @endif
+        @if (app()->getLocale() != 'uk')
+        <span>
+          <a href="{{route('setlocale', ['lang' => 'uk'])}}" class="px-4 py-2 ml-1 text-sm text-gray-700 bg-gray-100 hover:bg-gray-200 hover:text-gray-900" rel="nofollow">UA</a>
+        </span>
+        @endif
+        @if (app()->getLocale() != 'en')
+        <span>
+          <a href="{{route('setlocale', ['lang' => 'en'])}}" class="px-4 py-2 ml-1 text-sm text-gray-700 bg-gray-100 hover:bg-gray-200 hover:text-gray-900" rel="nofollow">EN</a>
+        </span>
+        @endif
+      </div>
+
+      <nav-bar class="hidden lg:block" lang="{{app()->getLocale()}}"></nav-bar>
 
     </div>
   </div>

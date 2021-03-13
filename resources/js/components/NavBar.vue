@@ -1,27 +1,20 @@
 <template>
-  <div class="float-right">
-    <div @mouseover="openLng = true" @mouseleave="leaveLng()" class="relative inline-block text-left ml-3 hidden lg:block">
-      <div>
-        <button @click="openLng = ! openLng" class="underline inline-flex items-center justify-center p-2 rounded-md text-gray-600 opacity-40 hover:opacity-100 hover:text-gray-500 bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-700 transition duration-150 ease-in-out text-sm">
-          <span class="uppercase" v-if="lang != 'uk'">{{lang}}</span>
-          <span class="uppercase" v-else>UA</span>
-          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </button>
-      </div>
-      <div v-show="openLng" class="origin-top-right absolute right-0 mt-0 w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-
-          <a v-for="l in langs" v-if="l.code != lang" :href="'/setlocale/' + l.code" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" rel="nofollow">{{l.name}}</a>
-
-        </div>
-      </div>
+  <div @mouseover="openLng = true" @mouseleave="leaveLng()" class="relative inline-block text-left ml-3">
+    <div>
+      <button @click="openLng = ! openLng" class="underline inline-flex items-center justify-center p-2 rounded-md text-gray-600 opacity-40 hover:opacity-100 hover:text-gray-500 bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-700 transition duration-150 ease-in-out text-sm">
+        <span class="uppercase" v-if="lang != 'uk'">{{lang}}</span>
+        <span class="uppercase" v-else>UA</span>
+        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </button>
     </div>
-    <div class="lg:hidden opacity-80">
-      <span v-for="l in langs" v-if="l.code != lang">
-        <a :href="'/setlocale/' + l.code" class="px-4 py-2 ml-1 text-sm text-gray-700 bg-gray-100 hover:bg-gray-200 hover:text-gray-900" rel="nofollow">{{l.name}}</a>
-      </span>
+    <div v-show="openLng" class="origin-top-right absolute right-0 mt-0 w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+      <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+
+        <a v-for="l in langs" v-if="l.code != lang" :href="'/setlocale/' + l.code" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" rel="nofollow">{{l.name}}</a>
+
+      </div>
     </div>
   </div>
 </template>

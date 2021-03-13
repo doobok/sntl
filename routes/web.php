@@ -16,7 +16,7 @@ Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], fu
 
   Route::get('/', function () {
       return view('main.pages.index');
-  });
+  })->name('maingage');
 
 });
 

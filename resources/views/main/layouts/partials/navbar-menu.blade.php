@@ -3,12 +3,7 @@
         <li class="menu--border">
           <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">Решения</a>
         </li>
-        <li class="menu--border">
-          <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">Услуги</a>
-        </li>
-        <li class="menu--border">
-          <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">О компании</a>
-        </li>
+
         <!--Toggleable Link-->
         <!-- <li class="toggleable hover:bg-blue-800 hover:text-white">
           <input type="checkbox" value="selected" id="toggle-one" class="toggle-input">
@@ -87,8 +82,8 @@
         -->
             <!--Hoverable Link-->
             <li class="hoverable menu--border">
-              <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">Hover</a>
-              <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl gradient border-t-2">
+              <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">Услуги</a>
+              {{-- <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl gradient border-t-2">
                 <div class="container mx-auto w-full flex flex-wrap justify-between mx-2">
                   <div class="w-full text-white mb-8">
                     <h2 class="font-bold text-2xl">Main Hero Message for the menu section</h2>
@@ -163,13 +158,26 @@
                     </div>
                   </ul>
                 </div>
-              </div>
+              </div> --}}
             </li>
             <!-- ## Hoverable Link Template ##
+
+
 
         <li class="hoverable hover:bg-blue-800 hover:text-white"><a href="#" class="relative block">x</a><div class="mega-menu">
           Add your mega menu content
           </div></li>
 
         -->
+
+            <li class="menu--border">
+              <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">Портфолио</a>
+            </li>
+            <li class="menu--border">
+              <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">О компании</a>
+            </li>
+            <li class="menu--border">
+              <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">Контакты</a>
+            </li>
+
           </ul>
