@@ -10,6 +10,7 @@
 
 @yield('content')
 
+@include('main.layouts.partials.wave-b')
 @include('main.layouts.partials.footer')
 
 </div>

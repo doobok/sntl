@@ -10,7 +10,8 @@ window.Vue = require('vue').default;
 
 // Components
 Vue.component('nav-bar', require('./components/NavBar.vue').default);
-Vue.component('mp-cases', require('./components/MPcases.vue').default);
+Vue.component('mp-cases', require('./components/MpCarouselCases.vue').default);
+Vue.component('mp-carousel-logo', require('./components/MpCarouselLogo.vue').default);
 
 
 const app = new Vue({

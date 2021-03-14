@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function(){
 
-  Route::get('/', function () {
-      return view('main.pages.index');
-  })->name('maingage');
+  Route::get('/', 'App\Http\Controllers\MainpagesController@index')->name('maingage');
 
 });
 
