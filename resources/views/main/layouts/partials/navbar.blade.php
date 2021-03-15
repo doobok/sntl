@@ -1,4 +1,4 @@
-<nav id="header" class="fixed w-full z-30 text-white">
+<nav id="header" class="fixed w-full z-30 text-white gradient">
 
   <div id="contactStr" class="w-full text-gray-600 bg-gray-200 align-baseline">
     <div class="w-full container mx-auto flex flex-wrap justify-between items-center mt-0 py-1">
@@ -32,7 +32,7 @@
 
   <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
     <div class="pl-4 flex items-center">
-      <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="{{route('maingage')}}">
+      <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="{{route('mainpage')}}">
         <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650">
           <path
           class="plane-take-off"
@@ -77,3 +77,4 @@
   </div>
   <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
 </nav>
+<div class="h-20 lg:h-28"></div>

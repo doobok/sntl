@@ -1,6 +1,6 @@
 <section class="bg-white py-8">
   <div class="container max-w-5xl mx-auto m-8">
-    <p class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+    <p class="w-full my-2 text-3xl sm:text-5xl font-bold leading-tight text-center text-gray-800">
       Готовые решения
     </p>
     <div class="w-full mb-4">
@@ -8,7 +8,7 @@
     </div>
     <div class="flex flex-wrap">
       <div class="w-5/6 sm:w-1/2 p-6">
-        <h2 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+        <h2 class="text-2xl sm:text-3xl text-gray-800 font-bold leading-none mb-3">
           Видеонаблюдение
         </h2>
         <p class="text-gray-600">
@@ -39,7 +39,7 @@
       </div>
       <div class="w-full sm:w-1/2 p-6 mt-6">
         <div class="align-middle">
-          <h2 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+          <h2 class="text-2xl sm:text-3xl text-gray-800 font-bold leading-none mb-3">
             Системы контроля доступа
           </h2>
           <p class="text-gray-600 mb-8">
@@ -60,7 +60,7 @@
     </div>
     <div class="flex flex-wrap">
       <div class="w-5/6 sm:w-1/2 p-6">
-        <h2 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+        <h2 class="text-2xl sm:text-3xl text-gray-800 font-bold leading-none mb-3">
           Локальные вычислительные сети
         </h2>
         <p class="text-gray-600">

@@ -1,4 +1,4 @@
-<div class="pt-52 md:pb-20">
+<div class="pt-12 md:pt-32 md:pb-20">
   <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
     <!--Left Col-->
     <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">

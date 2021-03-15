@@ -55,6 +55,7 @@
             if (scrollpos > 35) {
               header.classList.add("bg-white");
               header.classList.add("top-0");
+              header.classList.remove("gradient");
               contactstr.classList.add("hidden");
               //Use to switch toggleColour colours
               for (var i = 0; i < toToggle.length; i++) {
@@ -68,6 +69,7 @@
             } else {
               header.classList.remove("bg-white");
               header.classList.remove("top-0");
+              header.classList.add("gradient");
               contactstr.classList.remove("hidden");
               //Use to switch toggleColour colours
               for (var i = 0; i < toToggle.length; i++) {

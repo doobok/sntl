@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function(){
 
-  Route::get('/', 'App\Http\Controllers\MainpagesController@index')->name('maingage');
+  Route::get('/', 'App\Http\Controllers\MainpagesController@index')->name('mainpage');
+  Route::get('contacts', 'App\Http\Controllers\MainpagesController@contacts')->name('contacts');
 
 });
 

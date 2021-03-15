@@ -15,4 +15,9 @@ class MainpagesController extends Controller
         'customers' => $customers
       ]);
     }
+
+    public function contacts()
+    {
+      return view('main.pages.contacts');
+    }
 }

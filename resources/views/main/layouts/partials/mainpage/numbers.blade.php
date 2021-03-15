@@ -1,6 +1,6 @@
 <section class="container mx-auto text-center py-6 mb-12">
   <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-    <p class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+    <p class="w-full my-2 text-3xl sm:text-5xl font-bold leading-tight text-center text-white">
       Несколько фактов о Sentinel
     </p>
     <div class="w-full mb-4">
