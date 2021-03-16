@@ -1,6 +1,6 @@
 <section class="bg-gray-100 py-4">
   <div class="container mx-auto px-2">
-      <ol itemscope type="none" itemtype="https://schema.org/BreadcrumbList" class="list-reset py-4 flex text-gray-500">
+      <ol itemscope type="none" itemtype="https://schema.org/BreadcrumbList" class="list-reset pl-4 py-4 flex text-gray-500">
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"
             class="pr-2"><a href="{{route('mainpage')}}" class="no-underline">
           <span class="float-left pr-2">
@@ -30,43 +30,10 @@
       </ol>
   </div>
 </section>
-<section class="bg-white pt-3 pb-1">
+<section class="bg-white pl-4 pt-6 pb-1">
   <div class="container mx-auto px-2">
-    <h1 class="w-full my-2 text-3xl md:text-5xl font-bold leading-tight text-gray-700">
+    <h1 class="w-full my-2 text-4xl md:text-5xl font-bold leading-tight text-gray-700">
       {{$h1}}
     </h1>
   </div>
 </section>
-
-
-
-
-
-{{-- <section class="uk-section uk-section-xsmall uk-section-muted">
-  <div class="uk-container">
-    <ol itemscope type="none" itemtype="https://schema.org/BreadcrumbList" class="bcrumb uk-text-muted">
-      <li class="bcrumb--content" itemprop="itemListElement" itemscope
-          itemtype="https://schema.org/ListItem">
-        <a class="uk-link-reset uk-text-meta" itemprop="item" href="{{route('mainpage')}}">
-          <span class="uk-margin-small-right" uk-icon="icon: home ; ratio: 0.8"></span>
-            <span itemprop="name">@lang('site.mainpage')  </span></a>
-        <meta itemprop="position" content="1" />
-      </li>
-      @foreach ($crumbs as $key => list($uri, $title))
-        <span class="bcrumb--content">/</span>
-        <li class="bcrumb--content" itemprop="itemListElement" itemscope
-            itemtype="https://schema.org/ListItem">
-
-          @if (!$uri)
-            <a class="uk-link-text uk-text-meta" itemprop="item" href="{{url()->current()}}">
-          @else
-            <a class="uk-link-reset uk-text-meta" itemprop="item" href="{{ $uri }}">
-          @endif
-
-              <span itemprop="name">{{ $title }}</span></a>
-          <meta itemprop="position" content="{{ $key + 2 }}" />
-        </li>
-      @endforeach
-    </ol>
-  </div>
-</section> --}}

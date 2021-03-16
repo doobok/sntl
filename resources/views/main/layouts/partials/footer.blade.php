@@ -58,7 +58,7 @@
             <a href="#" class="no-underline hover:underline text-white">{{__('site.sitemap')}}</a>
           </li>
           <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-            <a href="#" class="no-underline hover:underline text-white">{{__('site.policy')}}</a>
+            <a href="{{route('page', 'policy')}}" class="no-underline hover:underline text-white">{{__('site.policy')}}</a>
           </li>
         </ul>
       </div>

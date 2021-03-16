@@ -174,7 +174,7 @@
               <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">Портфолио</a>
             </li>
             <li class="menu--border">
-              <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">О компании</a>
+              <a href="{{route('page', 'about-us')}}" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">О компании</a>
             </li>
             <li class="menu--border">
               <a href="{{route('contacts')}}" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">Контакты</a>

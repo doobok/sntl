@@ -12,25 +12,24 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function(){
-
-  Route::get('/', 'App\Http\Controllers\MainpagesController@index')->name('mainpage');
-  Route::get('contacts', 'App\Http\Controllers\MainpagesController@contacts')->name('contacts');
-
-});
-
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
 
-
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
+
+Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], function(){
+
+  Route::get('/', 'App\Http\Controllers\MainpagesController@index')->name('mainpage');
+  Route::get('/contacts', 'App\Http\Controllers\MainpagesController@contacts')->name('contacts');
+
+  Route::get('/{slug}', 'App\Http\Controllers\PagesController@page')->name('page');
+});
 
 //Переключение языков
 Route::get('setlocale/{lang}', function ($lang) {
