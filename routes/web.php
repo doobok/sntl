@@ -27,6 +27,7 @@ Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], fu
 
   Route::get('/', 'App\Http\Controllers\MainpagesController@index')->name('mainpage');
   Route::get('/contacts', 'App\Http\Controllers\MainpagesController@contacts')->name('contacts');
+  Route::get('/portfolio', 'App\Http\Controllers\MainpagesController@portfolio')->name('portfolio');
 
   Route::get('/{slug}', 'App\Http\Controllers\PagesController@page')->name('page');
 });

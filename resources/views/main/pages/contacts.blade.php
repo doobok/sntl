@@ -24,7 +24,7 @@
   <section class="bg-white text-gray-700 py-4">
     <div class="container mx-auto py-4 px-2">
       <div class="flex flex-wrap">
-        <div class="w-5/6 sm:w-1/2 lg:w-1/3 p-6">
+        <div class="w-full sm:w-1/2 lg:w-1/3 p-6">
           <ul class="list-reset mb-6 text-lg">
             <li class="my-7">
               <span class="ml-1 mr-4 flex">

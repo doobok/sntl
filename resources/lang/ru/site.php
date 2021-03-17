@@ -15,5 +15,6 @@ return [
     'global-address' => 'г. Киев, ул. Крещатик 46а',
     'mainpage' => 'Главная',
     'contacts' => 'Контакты',
+    'portfolio' => 'Портфолио',
 
 ];

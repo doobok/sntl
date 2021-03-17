@@ -10,6 +10,13 @@
 
       <mp-cases></mp-cases>
 
+      <div class="flex items-center justify-center pt-8">
+        <a href="{{route('portfolio')}}">
+          <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-6 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Посмотреть все проекты
+          </button>
+        </a>
+      </div>
 
     </div>
   </div>

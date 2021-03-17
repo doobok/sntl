@@ -20,4 +20,13 @@ class MainpagesController extends Controller
     {
       return view('main.pages.contacts');
     }
+
+    public function portfolio()
+    {
+      // $customers = Customer::where('active', 1)->orderBy('order', 'desc')->get();
+
+      return view('main.pages.portfolio', [
+        // 'cases' => $cases
+      ]);
+    }
 }
