@@ -15,6 +15,8 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'ga' => env('G_ANALYTICS', null),   
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

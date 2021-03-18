@@ -12,7 +12,7 @@
       <slide>
             <div class="py-6 px-3">
                 <div class="bg-white shadow-xl rounded-lg overflow-hidden w--card">
-                  <img :src="'/storage/' + p.image" :alt="p.heading">
+                  <img :src="'/storage/' + getCrop(p.image)" :alt="p.heading">
                     <div class="p-4">
                         <p class="text-regular text-gray-700">{{p.heading}}</p>
                     </div>
@@ -37,7 +37,6 @@
             </div>
           </slide>
         </template>
-
         </carousel>
 
   </div>
@@ -48,29 +47,22 @@ import { Carousel, Slide } from 'vue-carousel';
 export default {
   props: ['lang', 'projects'],
   components: { Carousel, Slide },
-data() {
-    return {
-      // currentOffset: 0,
-
-    }
-  },
-  computed: {
-
-  },
   methods: {
     getUrl (url) {
-    let link = null;
-      if (url) {
-        if (this.lang == 'ru') {
-           link = '/portfolio/' + url;
+      let link = null;
+        if (url) {
+          if (this.lang == 'ru') {
+             link = '/portfolio/' + url;
+          }
+          else {
+             link = '/' + this.lang + '/portfolio/' + url;
+          }
         }
-        else {
-           link = '/' + this.lang + '/portfolio/' + url;
-        }
-      }
-     return link;
-    }
-
+       return link;
+     },
+     getCrop (img) {
+       return img.replace(/\./g, '-cropped.');
+     }
   }
 }
 

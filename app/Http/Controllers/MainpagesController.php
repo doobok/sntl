@@ -11,7 +11,7 @@ class MainpagesController extends Controller
     public function index()
     {
       $customers = Customer::where('active', 1)->orderBy('order', 'desc')->get();
-      $projects = Project::all()->translate(\App::getLocale());
+      $projects = Project::orderBy('id', 'desc')->limit(10)->get()->translate(\App::getLocale());
 
       return view('main.pages.index', [
         'customers' => $customers,
@@ -36,7 +36,7 @@ class MainpagesController extends Controller
     public function project($slug)
     {
       $page = Project::where('slug', $slug)->firstorfail();
-      $projects = Project::limit(3)->get();
+      $projects = Project::where('id', '!=', $page->id)->orderBy('id', 'desc')->limit(3)->get();
 
       return view('main.pages.project', [
         'page' => $page,

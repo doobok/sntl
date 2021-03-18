@@ -37,24 +37,13 @@
 
       {{-- youtube--}}
       @isset($page->youtube)
-        <div class="px-4 flex justify-center">
-    			<div class="rounded-lg shadow-xl p-4 w-full sm:w-1/2">
-    				<iframe class="w-full" height="300" src="https://www.youtube-nocookie.com/embed/{{$page->youtube}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    			</div>
-    		</div>
+        @include('main.layouts.partials.modules.youtube')
       @endisset
       {{-- end youtube--}}
 
-          {{-- @isset($page->youtube)
-            <div id="video">
-              <h4 class="uk-heading-line"><span><span class="uk-text-muted uk-margin-right" uk-icon="icon: video-camera; ratio: 1.1"></h4>
-              <iframe src="https://www.youtube-nocookie.com/embed/{{$page->youtube}}" width="100%" height="400" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
-              <hr>
-            </div>
-          @endisset --}}
-
-
-
+      <div class="flex justify-end">
+          @include('main.components.sh')
+      </div>
 
     </article>
   </section>

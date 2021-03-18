@@ -3,10 +3,12 @@
       <ol itemscope type="none" itemtype="https://schema.org/BreadcrumbList" class="list-reset pl-4 py-4 flex flex-inline overflow-x-auto text-gray-500">
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"
             class="whitespace-nowrap pr-2"><a href="{{route('mainpage')}}" class="no-underline">
-          <span class="float-left pr-2">
+          <span class="float-left pr-2 hidden sm:block">
             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M20 7.093v-5.093h-3v2.093l3 3zm4 5.907l-12-12-12 12h3v10h18v-10h3zm-5 8h-14v-10.26l7-6.912 7 6.99v10.182zm-5-1h-4v-6h4v6z"/></svg>
           </span>
-          {{__('site.mainpage')}}
+          <span>
+            {{__('site.mainpage')}}
+          </span>
           </a>
           <meta itemprop="position" content="1" />
         </li>

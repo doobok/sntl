@@ -31,13 +31,31 @@
           </blockquote>
         </div>
         <div class="w-full sm:w-1/2 p-6 pt-0 mb-9">
-          <img class="w-full shadow-lg border-2 rounded-lg p-4" src="{{ Voyager::image( $page->image ) }}" alt="{{$page->getTranslatedAttribute('heading')}}">
+          <img class="w-full shadow-lg border-2 rounded-sm p-2 origin-center transform rotate-1" src="{{ Voyager::image( $page->image ) }}" alt="{{$page->getTranslatedAttribute('heading')}}">
 
         </div>
       </div>
-      <div>
+      <div class="px-4">
         {!!$page->getTranslatedAttribute('body')!!}
       </div>
+
+      <div class="w-full my-6">
+        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+
+      {{-- youtube--}}
+      @isset($page->youtube)
+        @include('main.layouts.partials.modules.youtube')
+      @endisset
+      {{-- end youtube--}}
+
+      <div class="flex justify-end">
+          @include('main.components.sh')
+      </div>
+
+
+
+
 
     </article>
   </section>
@@ -51,7 +69,7 @@
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
 
-      <div class="flex flex-wrap items-center place-items-auto">
+      <div class="flex flex-wrap items-start place-items-auto">
 
         @foreach ($projects as $project)
           @include('main.layouts.partials.modules.project')

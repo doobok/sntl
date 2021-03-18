@@ -1,13 +1,13 @@
 
  {{-- Global site tag (gtag.js) - Google Analytics --}}
-{{-- <script async src="https://www.googletagmanager.com/gtag/js?id={{setting('site.ganalytics')}}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{config('app.ga')}}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{setting('site.ganalytics')}}');
-</script> --}}
+  gtag('config', '{{config('app.ga')}}');
+</script>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />

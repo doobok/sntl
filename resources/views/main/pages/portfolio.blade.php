@@ -34,7 +34,7 @@
     </article>
   </section>
 
-  <section class="bg-white border-b py-8">
+  <section class="bg-white py-8">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
       <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
         Выполненные проекты
@@ -43,7 +43,7 @@
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
 
-      <div class="flex flex-wrap items-center place-items-auto">
+      <div class="flex flex-wrap items-start place-items-auto">
 
         @foreach ($projects as $project)
           @include('main.layouts.partials.modules.project')
