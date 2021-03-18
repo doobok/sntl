@@ -8,16 +8,19 @@ export default new MLCreate({
   languages: [
     new MLanguage('ru').create({
         search: 'Поиск',
+        readmore: 'Подробнее',
 
     }),
 
     new MLanguage('uk').create({
         search: 'Пошук',
+        readmore: 'Детальніше',
 
     }),
 
     new MLanguage('en').create({
         search: 'Search',
+        readmore: 'More details',
 
     }),
   ]

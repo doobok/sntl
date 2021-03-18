@@ -8,7 +8,7 @@
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div>
 
-      <mp-cases></mp-cases>
+      <mp-cases lang="{{app()->getLocale()}}" :projects="{{$projects}}"></mp-cases>
 
       <div class="flex items-center justify-center pt-8">
         <a href="{{route('portfolio')}}">

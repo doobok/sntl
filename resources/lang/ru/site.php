@@ -16,5 +16,6 @@ return [
     'mainpage' => 'Главная',
     'contacts' => 'Контакты',
     'portfolio' => 'Портфолио',
+    'readmore' => 'Подробнее',
 
 ];
