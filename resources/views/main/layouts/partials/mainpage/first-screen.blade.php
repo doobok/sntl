@@ -9,9 +9,9 @@
       <p class="leading-normal text-xl mb-8">
         Разработка и внедрение эффективных, комплексных решений по автоматизации технологических и бизнес-процессов, для повышения продуктивности бизнеса.
       </p>
-      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-        Оставить заявку
-      </button>
+
+      <phone-form></phone-form>
+
     </div>
     <!--Right Col-->
     <div class="w-full md:w-3/5 py-6 grid justify-items-center">
