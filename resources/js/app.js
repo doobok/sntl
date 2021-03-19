@@ -12,6 +12,7 @@ window.Vue = require('vue').default;
 Vue.component('nav-bar', require('./components/NavBar.vue').default);
 Vue.component('mp-cases', require('./components/MpCarouselCases.vue').default);
 Vue.component('mp-carousel-logo', require('./components/MpCarouselLogo.vue').default);
+Vue.component('phone-btn', require('./components/PhoneGetBtn.vue').default);
 Vue.component('phone-form', require('./components/PhoneGetForm.vue').default);
 
 const app = new Vue({
