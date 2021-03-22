@@ -15,7 +15,8 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
-    'ga' => env('G_ANALYTICS', null),   
+    'ga' => env('G_ANALYTICS', null),
+    'telegramchat' => env('TELEGRAM_CHAT', null),
 
     /*
     |--------------------------------------------------------------------------

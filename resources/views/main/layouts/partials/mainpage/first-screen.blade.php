@@ -10,14 +10,16 @@
         Разработка и внедрение эффективных, комплексных решений по автоматизации технологических и бизнес-процессов, для повышения продуктивности бизнеса.
       </p>
 
-      <phone-btn></phone-btn>
+      <p class="mx-auto md:mx-1">
+          <phone-btn title="Оставить заявку"></phone-btn>
 
+      </p>
     </div>
     <!--Right Col-->
     <div class="w-full md:w-3/5 py-6 grid justify-items-center">
       <div>
 
-        <img class="w-full z-50" src="/main.png" />
+        <img class="w-full z-50" src="/main.svg" />
 
       </div>
     </div>

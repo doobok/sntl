@@ -84,4 +84,5 @@
 
 
 
+  @include('main.layouts.partials.wave-b')
 @endsection

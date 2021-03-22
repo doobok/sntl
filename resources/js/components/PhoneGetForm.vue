@@ -64,6 +64,9 @@ export default {
         } else {
           axios.post('/api/send-phone', this.collectedCall).then(response => {
               this.close();
+              this.name = '';
+              this.phone = '';
+              console.log('Контакт успешно отправлен, ожидайте звонка');
             }).catch(err => {
               let e = { ...err    }
               alert('Error! - ' + e.response.data.message)
