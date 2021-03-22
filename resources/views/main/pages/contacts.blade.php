@@ -3,8 +3,8 @@
 @section('head')
 @component('main.components.meta')
 
-  @slot('title') SNTL главная @endslot
-  @slot('description') description @endslot
+  @slot('title') {{__('seo.contacts-title')}} @endslot
+  @slot('description') {{__('seo.contacts-description')}} @endslot
   @slot('image') @endslot
   @slot('date') 2021 @endslot
 

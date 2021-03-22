@@ -18,6 +18,10 @@ return [
     'portfolio' => 'Портфолио',
     'readmore' => 'Подробнее',
 
+    'completed-projects' => 'Завершенные проекты',
+    'see-projects' => 'Посмотреть все проекты',
+    'other-projects' => 'Другие проекты',    
+
     'our-partners' => 'Наши партнеры',
     'partners' => 'Партнеры',
     'see-partners' => 'Все партнеры',

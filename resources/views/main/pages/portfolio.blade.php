@@ -3,8 +3,8 @@
 @section('head')
 @component('main.components.meta')
 
-  @slot('title') SNTL главная @endslot
-  @slot('description') description @endslot
+  @slot('title') {{__('seo.portfolio-title')}} @endslot
+  @slot('description') {{__('seo.portfolio-description')}} @endslot
   @slot('image') @endslot
   @slot('date') 2021 @endslot
 
@@ -37,7 +37,7 @@
   <section class="bg-white py-8">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
       <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-        Выполненные проекты
+        {{__('site.completed-projects')}}
       </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>

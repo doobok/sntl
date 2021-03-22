@@ -1,7 +1,7 @@
   <ul class="list-reset lg:flex justify-end flex-1 items-center">
         <!--Regular Link-->
         <li class="menu--border">
-          <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">Решения</a>
+          <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">{{__('menu.solutions')}}</a>
         </li>
 
         <!--Toggleable Link-->
@@ -82,7 +82,7 @@
         -->
             <!--Hoverable Link-->
             <li class="hoverable menu--border">
-              <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">Услуги</a>
+              <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">{{__('menu.services')}}</a>
               {{-- <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl gradient border-t-2">
                 <div class="container mx-auto w-full flex flex-wrap justify-between mx-2">
                   <div class="w-full text-white mb-8">
@@ -171,13 +171,13 @@
         -->
 
             <li class="menu--border">
-              <a href="{{route('portfolio')}}" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">Портфолио</a>
+              <a href="{{route('portfolio')}}" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">{{__('menu.portfolio')}}</a>
             </li>
             <li class="menu--border">
-              <a href="{{route('page', 'about-us')}}" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">О компании</a>
+              <a href="{{route('page', 'about-us')}}" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">{{__('menu.ab-us')}}</a>
             </li>
             <li class="menu--border">
-              <a href="{{route('contacts')}}" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">Контакты</a>
+              <a href="{{route('contacts')}}" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">{{__('menu.contacts')}}</a>
             </li>
 
           </ul>

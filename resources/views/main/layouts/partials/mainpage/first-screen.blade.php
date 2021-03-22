@@ -2,24 +2,22 @@
   <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
     <!--Left Col-->
     <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-      <p class="uppercase tracking-loose w-full">то что необходимо Вашему бизнесу</p>
+      <p class="uppercase tracking-loose w-full">{{__('mainpage.uptitle')}}</p>
       <h1 class="my-4 text-5xl font-bold leading-tight">
-        Системный интегратор
+        {{__('mainpage.h1')}}
       </h1>
       <p class="leading-normal text-xl mb-8">
-        Разработка и внедрение эффективных, комплексных решений по автоматизации технологических и бизнес-процессов, для повышения продуктивности бизнеса.
+        {{__('mainpage.subtitle')}}
       </p>
-
       <p class="mx-auto md:mx-1">
-          <phone-btn title="Оставить заявку" color="bg-white text-gray-800"></phone-btn>
-
+          <phone-btn title="{{__('mainpage.set-request')}}" color="bg-white text-gray-800"></phone-btn>
       </p>
     </div>
     <!--Right Col-->
     <div class="w-full md:w-3/5 py-6 grid justify-items-center">
       <div>
 
-        <img class="w-full z-50" src="/main.svg" />
+        <img class="w-full z-50" src="/main.svg" alt="{{__('mainpage.h1')}}"/>
 
       </div>
     </div>

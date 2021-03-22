@@ -1,7 +1,7 @@
 <section class="container mx-auto text-center py-6 mb-12">
   <div class="container mx-auto flex flex-wrap pt-4 pb-12">
     <p class="w-full my-2 text-3xl sm:text-5xl font-bold leading-tight text-center text-white">
-      Несколько фактов о Sentinel
+      {{__('mainpage.some-facts')}}
     </p>
     <div class="w-full mb-4">
       <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
@@ -15,7 +15,7 @@
           5
         </div>
         <div class="w-full text-xl">
-          лет на рынке
+          {{__('mainpage.1-facts')}}
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
           50+
         </div>
         <div class="w-full text-xl">
-          крупных проектов
+          {{__('mainpage.2-facts')}}
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
           100+
         </div>
         <div class="w-full text-xl">
-          партнеров
+          {{__('mainpage.3-facts')}}
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@
           25+
         </div>
         <div class="w-full text-xl">
-          крупных фирм-заказчиков
+          {{__('mainpage.4-facts')}}
         </div>
       </div>
     </div>
