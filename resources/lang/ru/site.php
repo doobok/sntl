@@ -18,4 +18,11 @@ return [
     'portfolio' => 'Портфолио',
     'readmore' => 'Подробнее',
 
+    'our-partners' => 'Наши партнеры',
+    'partners' => 'Партнеры',
+    'see-partners' => 'Все партнеры',
+    'our-сustomers' => 'Наши заказчики',
+    'сustomers' => 'Заказчики',
+
+
 ];

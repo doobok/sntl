@@ -1,4 +1,4 @@
-<section class="bg-white border-b py-8">
+<section class="bg-white pt-10">
   <div class="antialiased font-sans pb-12">
   <div class="max-w-6xl mx-auto">
       <h2 class="container my-2 pt-4 text-3xl sm:text-5xl font-bold leading-tight text-center text-gray-800">

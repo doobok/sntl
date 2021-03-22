@@ -22,8 +22,10 @@
   @include('main.layouts.partials.wave-t')
   @include('main.layouts.partials.mainpage.cases')
   @include('main.layouts.partials.mainpage.wave-w-g')
-  @include('main.layouts.partials.mainpage.partners')
   @include('main.layouts.partials.mainpage.consumers')
+  @include('main.layouts.partials.mainpage.wave-g-w')
+  @include('main.layouts.partials.mainpage.vendors')
+  @include('main.layouts.partials.mainpage.wave-w-g')
   @include('main.layouts.partials.mainpage.last-screen')
 
 

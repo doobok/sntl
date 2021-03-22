@@ -11,7 +11,7 @@
       </p>
 
       <p class="mx-auto md:mx-1">
-          <phone-btn title="Оставить заявку"></phone-btn>
+          <phone-btn title="Оставить заявку" color="bg-white text-gray-800"></phone-btn>
 
       </p>
     </div>

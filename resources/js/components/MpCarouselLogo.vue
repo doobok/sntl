@@ -12,7 +12,7 @@
           >
             <div class="icon--slider">
               <img :alt="item.name"
-                  class=""
+                  :title="item.name"
                   :src="'/storage/' + item.image">
             </div>
         </slide>
