@@ -9,5 +9,23 @@ return [
     */
 
     'copyright' => 'Всі права захищені',
+    'sitemap' => 'Карта сайту',
+    'policy' => 'Політика конфіденційності',
+    'shedule-days' => 'пн-пт',
+    'global-address' => 'м. Київ, вул. Хрещатик 46а',
+    'mainpage' => 'Головна',
+    'contacts' => 'Контакти',
+    'portfolio' => 'Портфоліо',
+    'readmore' => 'Детальніше',
+
+    'completed-projects' => 'Реалізовані проекти',
+    'see-projects' => 'Подивитися всі проекти',
+    'other-projects' => 'Інші проекти',
+
+    'our-partners' => 'Наші партнери',
+    'partners' => 'Партнери',
+    'see-partners' => 'Всі партнери',
+    'our-сustomers' => 'Наші замовники',
+    'сustomers' => 'Замовники',
 
 ];
