@@ -16,7 +16,7 @@
   @include('main.layouts.partials.mainpage.first-screen')
   @include('main.layouts.partials.wave-t')
 
-  @include('main.layouts.partials.mainpage.ready-solutions')
+  @include('main.layouts.partials.mainpage.solution-cards')
   @include('main.layouts.partials.wave-b')
   @include('main.layouts.partials.mainpage.numbers')
   @include('main.layouts.partials.wave-t')
