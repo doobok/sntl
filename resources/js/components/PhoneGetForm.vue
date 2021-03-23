@@ -24,7 +24,7 @@
                       name="name"
                       @blur="$v.name.$touch()"
                       type="text">
-                      <p v-if="$v.name.$error" class="text-red-500 pb-2">{{$ml.get('errName')}}</p>
+                      <p v-if="$v.name.$error" class="text--dander pb-2">{{$ml.get('errName')}}</p>
                     </label>
                     <label>
                       <span class="text-gray-700">{{$ml.get('phone')}}</span>
@@ -33,7 +33,7 @@
                         v-model="phone"
                         @blur="$v.phone.$touch()"
                         type="text">
-                        <p v-if="$v.phone.$error" class="text-red-500">{{$ml.get('errPhone')}}</p>
+                        <p v-if="$v.phone.$error" class="text--dander">{{$ml.get('errPhone')}}</p>
                     </label>
                   <!-- </div> -->
               </div>
@@ -43,7 +43,7 @@
                 <button @click="close" class="px-4 bg-transparent p-3 rounded-lg hover:bg-gray-100 mr-2">{{$ml.get('cancel')}}</button>
                 <button @click="sendPhone"
                   :disabled="$v.$invalid"
-                  :class="!$v.$invalid ? 'gradient' : 'bg-gray-400'"
+                  :class="!$v.$invalid ? 'gradient' : 'gray--btn'"
                   class="px-4 p-3 rounded-lg text-white">{{$ml.get('send')}}
                 </button>
               </div>
@@ -170,6 +170,9 @@ export default {
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+.gray--btn {
+  background-color: #aaa;
 }
 input[type=text] {
   font-size: 1.4rem;
