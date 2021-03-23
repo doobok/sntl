@@ -8,6 +8,10 @@ import './ml';
 // Vue
 window.Vue = require('vue').default;
 
+// валидатор форм
+import Vuelidate from 'vuelidate';
+Vue.use(Vuelidate);
+
 // Components
 Vue.component('nav-bar', require('./components/NavBar.vue').default);
 Vue.component('mp-cases', require('./components/MpCarouselCases.vue').default);
