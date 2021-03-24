@@ -5,7 +5,7 @@
   color: #46ab9f;
 }
 .text--dander {
-  color: #f14444;  
+  color: #f14444;
 }
 .menu--border {
   border-bottom: 3px solid rgba(70, 171, 159, 0);
@@ -37,4 +37,10 @@
 }
 .hoverable:hover .mega-menu {
   display: block;
+}
+
+.indev {
+    position: fixed;
+    left: 10px;
+    bottom: 20px;
 }

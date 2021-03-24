@@ -8,6 +8,8 @@
 <div id="app">
 @include('main.layouts.partials.navbar')
 
+@include('main.layouts.partials.in-dev')
+
 @yield('content')
 
 @include('main.layouts.partials.footer')
