@@ -13,14 +13,14 @@ class LeadsController extends Controller
   {
 
         // notifications
-        if (setting('site.env') ===  'production') {
+        // if (setting('site.env') ===  'production') {
 
             // формируем сообщение
             $phone = '+38' . $request->phone;
             $name = $request->name;
             //telegram notification
             Notification::send('', new TelegramNewLead($name, $phone));
-        }
+        // }
 
         return response()->json(['success' => 'true']);
   }
