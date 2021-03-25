@@ -5,7 +5,7 @@
 
   @slot('title') {{$page->getTranslatedAttribute('heading')}} @endslot
   @slot('description') {{$page->getTranslatedAttribute('teaser')}} @endslot
-  @slot('image') {{$page->image}} @endslot
+  @slot('image') @isset($page->image) {{ Voyager::image( $page->image ) }} @endisset @endslot
   @slot('date') {{$page->created_at}} @endslot
 
 @endcomponent
@@ -63,7 +63,7 @@
   <section class="bg-white py-8">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
       <p class="w-full my-2 text-2xl font-bold leading-tight text-center text-gray-800">
-        {{__('site.other-projects')}}        
+        {{__('site.other-projects')}}
       </>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>

@@ -4,9 +4,13 @@
 @component('main.components.meta')
 
   @slot('title') {{__('seo.contacts-title')}} @endslot
-  @slot('description') {{__('seo.contacts-description')}} @endslot
-  @slot('image') @endslot
-  @slot('date') 2021 @endslot
+  @slot('description') {{__('seo.contacts-description', [
+                        'phone' => setting('site.phone'),
+                        'schedule' => setting('site.schedule'),
+                        ])}}
+  @endslot
+  @slot('image') /contacts.png @endslot
+  @slot('date') {{config('app.startdate')}} @endslot
 
 @endcomponent
 @endsection

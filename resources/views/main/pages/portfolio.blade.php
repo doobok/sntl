@@ -4,9 +4,13 @@
 @component('main.components.meta')
 
   @slot('title') {{__('seo.portfolio-title')}} @endslot
-  @slot('description') {{__('seo.portfolio-description')}} @endslot
-  @slot('image') @endslot
-  @slot('date') 2021 @endslot
+  @slot('description') {{__('seo.portfolio-description', [
+                        'phone' => setting('site.phone'),
+                        'schedule' => setting('site.schedule'),
+                        ])}}
+  @endslot
+  @slot('image') /portfolio.png @endslot
+  @slot('date') {{config('app.startdate')}} @endslot
 
 @endcomponent
 @endsection
@@ -26,7 +30,7 @@
       <div class="flex flex-wrap">
         <div class="w-full sm:w-1/2 p-6">
           <blockquote class="text-xl">
-            <p>{{__('seo.portfolio-body')}}</p>
+            {!!__('seo.portfolio-body')!!}
           </blockquote>
         </div>
         <div class="w-full sm:w-1/2 p-6 pt-0 mb-9">

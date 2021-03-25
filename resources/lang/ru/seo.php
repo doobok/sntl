@@ -9,18 +9,21 @@ return [
     */
 
     'mp-title' => 'Системный интегратор - Sentinel, ведущая компания интегратор в Киеве и регионе',
-    'mp-description' => '',
+    'mp-description' => 'Ведущий системный интегратор, установка видеонаблюдения, СКС, СКУД, ЛВС в Киеве и регионе ◈ компания Sentinel ☎ :phone (Пн-Пт :schedule)',
 
     'contacts-title' => 'Контакты компании Sentinel - ведущего системного интегратора в Киеве',
-    'contacts-description' => '',
+    'contacts-description' => 'Системный интегратор, видеонаблюдения, СКС, СКУД, ЛВС в Киеве и регионе ◈ компания Sentinel ☎ :phone (Пн-Пт :schedule)',
 
     'partners-title' => 'Партнеры и вендоры системного интегратора Sentinel',
-    'partners-description' => '',
+    'partners-description' => 'Партнеры ведущего системного интегратора ◈ видеонаблюдения, СКС, СКУД, ЛВС в Киеве и регионе ◈ компания Sentinel ☎ :phone (Пн-Пт :schedule)',
 
     'portfolio-title' => 'Проекты - портфолио системного интегратора Sentinel',
-    'portfolio-description' => '',
+    'portfolio-description' => 'Реализованные проекты ведущего системного интегратора ◈ видеонаблюдения, СКС, СКУД, ЛВС в Киеве и регионе ◈ компания Sentinel ☎ :phone (Пн-Пт :schedule)',
 
 
-    'portfolio-body' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    'portfolio-body' =>
+      '<p>Наша компания имеет большой опыт работы в различных направлениях системной интеграции.</p>
+      <p>Среди наших заказчиков вы найдете, как гигантов, которые не нуждаются в дополнительном представлении так и компании, которые только в начале своего развития.</p>
+      <p>Мы приглашаем к сотрудничеству всех кому нужны передовые решения в области системной интеграции, а лучшей демонстрацией наших возможностей является перечень реализованных проектов.</p>'
 
 ];

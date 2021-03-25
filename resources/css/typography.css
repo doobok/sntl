@@ -17,7 +17,7 @@
     @apply text-sm font-bold mb-3;
   }
   article p {
-    @apply text-justify leading-7;
+    @apply text-justify leading-7 mb-3;
   }
 
   article ul {
@@ -29,5 +29,6 @@
   article blockquote {
     @apply border-l-4 italic text-lg my-8 pl-8 md:pl-12;
     border-color: #46ab9f;
+    text-indent: 1.5em;
   }
 }

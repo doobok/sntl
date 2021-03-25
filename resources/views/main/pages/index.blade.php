@@ -4,9 +4,13 @@
 @component('main.components.meta')
 
   @slot('title') {{__('seo.mp-title')}} @endslot
-  @slot('description') {{__('seo.mp-description')}} @endslot
-  @slot('image') @endslot
-  @slot('date') 2021 @endslot
+  @slot('description') {{__('seo.mp-description', [
+                        'phone' => setting('site.phone'),
+                        'schedule' => setting('site.schedule'),
+                        ])}}
+  @endslot
+  @slot('image') /main.svg @endslot
+  @slot('date') {{config('app.startdate')}} @endslot
 
 @endcomponent
 @endsection

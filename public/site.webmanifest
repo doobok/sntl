@@ -1,15 +1,10 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Sentinel",
+    "short_name": "SNTL",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/android-chrome-512x512.png",
-            "sizes": "512x512",
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
             "type": "image/png"
         }
     ],

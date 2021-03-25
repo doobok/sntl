@@ -17,6 +17,7 @@ return [
 
     'ga' => env('G_ANALYTICS', null),
     'telegramchat' => env('TELEGRAM_CHAT', null),
+    'startdate' => env('START_DATE', 2020-02-17),
 
     /*
     |--------------------------------------------------------------------------
