@@ -55,7 +55,7 @@
       <div class="flex-1">
         <ul class="list-reset mb-6">
           <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-            <a href="#" class="no-underline hover:underline text-white">{{__('site.sitemap')}}</a>
+            <a href="{{route('mappage')}}" class="no-underline hover:underline text-white">{{__('site.sitemap')}}</a>
           </li>
           <li class="mt-2 inline-block mr-2 md:block md:mr-0">
             <a href="{{route('page', 'policy')}}" class="no-underline hover:underline text-white">{{__('site.policy')}}</a>

@@ -31,6 +31,9 @@ Route::group(['prefix' => App\Http\Middleware\LocaleMiddleware::getLocale()], fu
   Route::get('/portfolio/{slug}', 'App\Http\Controllers\MainpagesController@project')->name('project');
   Route::get('/partners', 'App\Http\Controllers\MainpagesController@partners')->name('partners');
 
+  Route::get('/sitemap.xml', 'App\Http\Controllers\SitemapController@sitemap')->name('sitemap');
+  Route::get('/sitemap', 'App\Http\Controllers\SitemapController@mappage')->name('mappage');
+
   Route::get('/{slug}', 'App\Http\Controllers\PagesController@page')->name('page');
 });
 

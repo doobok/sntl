@@ -10,4 +10,6 @@ return [
 
     'copyright' => 'All rights reserved',
 
+    'sitemap' => 'Sitemap',
+
 ];

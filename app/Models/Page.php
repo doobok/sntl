@@ -17,11 +17,11 @@ class Page extends Model
 
     public function parent()
     {
-      return $this->belongsTo('App\Models\Page', 'parrent');
+      return $this->belongsTo('App\Models\Page', 'parrent', 'slug');
     }
 
     public function children()
     {
-        return $this->hasMany('App\Models\Page', 'parrent');
+        return $this->hasMany('App\Models\Page', 'parrent', 'slug');
     }
 }

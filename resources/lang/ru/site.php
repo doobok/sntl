@@ -20,13 +20,15 @@ return [
 
     'completed-projects' => 'Завершенные проекты',
     'see-projects' => 'Посмотреть все проекты',
-    'other-projects' => 'Другие проекты',    
+    'other-projects' => 'Другие проекты',
 
     'our-partners' => 'Наши партнеры',
     'partners' => 'Партнеры',
     'see-partners' => 'Все партнеры',
     'our-сustomers' => 'Наши заказчики',
     'сustomers' => 'Заказчики',
+
+    'sitemap' => 'Карта сайта',
 
 
 ];
