@@ -38,7 +38,7 @@ export default new MLCreate({
 
     new MLanguage('en').create({
         search: 'Search',
-        readmore: 'More details',
+        readmore: 'Read more',
         contTitle: 'Leave a contact',
         contTitle2: 'and we will call you back',
         youName: 'Your name',
