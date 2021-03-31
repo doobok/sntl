@@ -18,7 +18,7 @@ return [
     'portfolio' => 'Портфоліо',
     'readmore' => 'Детальніше',
 
-    'completed-projects' => 'Реалізовані проекти',
+    'completed-projects' => 'Наші проекти',
     'see-projects' => 'Подивитися всі проекти',
     'other-projects' => 'Інші проекти',
 

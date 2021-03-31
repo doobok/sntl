@@ -9,7 +9,7 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>{{route('sitemap')}}</loc>
+  <loc>{{route('mappage')}}</loc>
   <lastmod>{{ $mainpage_date->tz('GMT')->toAtomString() }}</lastmod>
   <priority>1.00</priority>
 </url>
