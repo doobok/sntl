@@ -1,4 +1,4 @@
-<section class="bg-white pt-10">
+<section class="bg-white py-16">
   <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
     <h2 class="w-full my-2 text-3xl sm:text-5xl font-bold leading-tight text-center text-gray-800">
       {{__('site.our-partners')}}
@@ -11,7 +11,7 @@
 
     <div class="flex items-center justify-center pt-8">
       <a href="{{route('partners')}}">
-        <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-6 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold my-6 py-6 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           {{__('site.see-partners')}}
         </button>
       </a>

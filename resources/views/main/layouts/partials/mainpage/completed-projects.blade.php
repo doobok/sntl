@@ -1,4 +1,4 @@
-<section class="bg-white pt-10">
+<section class="bg-white py-16">
   <div class="antialiased font-sans pb-12">
   <div class="max-w-6xl mx-auto">
       <h2 class="container my-2 pt-4 text-3xl sm:text-5xl font-bold leading-tight text-center text-gray-800">
@@ -12,7 +12,7 @@
 
       <div class="flex items-center justify-center pt-8">
         <a href="{{route('portfolio')}}">
-          <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-6 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold my-6 py-6 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             {{__('site.see-projects')}}
           </button>
         </a>

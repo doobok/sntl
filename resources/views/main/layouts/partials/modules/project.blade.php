@@ -22,7 +22,7 @@
   <div class="flex justify-center p-4 border-t border-gray-300 text-gray-700 bg-white rounded-b rounded-t-none overflow-hidden shadow shadow-lg p-6">
       <div>
         <a href="{{route('project', [$project->slug]) }}">
-          <button class="hover:underline gradient text-white font-bold rounded-full my-1 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <button class="hover:underline gradient text-white font-bold my-1 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             {{__('site.readmore')}}
           </button>
         </a>

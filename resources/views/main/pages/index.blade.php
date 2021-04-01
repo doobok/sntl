@@ -18,21 +18,21 @@
 @section('content')
 
   @include('main.layouts.partials.mainpage.first-screen')
-  @include('main.layouts.partials.wave-t')
+  {{-- @include('main.layouts.partials.wave-t') --}}
 
   @include('main.layouts.partials.mainpage.solution-cards')
-  @include('main.layouts.partials.wave-b')
+  {{-- @include('main.layouts.partials.wave-b') --}}
   @include('main.layouts.partials.mainpage.numbers')
-  @include('main.layouts.partials.wave-t')
+  {{-- @include('main.layouts.partials.wave-t') --}}
   @include('main.layouts.partials.mainpage.completed-projects')
-  @include('main.layouts.partials.mainpage.wave-w-g')
+  {{-- @include('main.layouts.partials.mainpage.wave-w-g') --}}
   @include('main.layouts.partials.mainpage.consumers')
-  @include('main.layouts.partials.mainpage.wave-g-w')
+  {{-- @include('main.layouts.partials.mainpage.wave-g-w') --}}
   @include('main.layouts.partials.mainpage.vendors')
-  @include('main.layouts.partials.mainpage.wave-w-g')
+  {{-- @include('main.layouts.partials.mainpage.wave-w-g') --}}
   @include('main.layouts.partials.mainpage.last-screen')
 
 
-  @include('main.layouts.partials.mainpage.wave-b-w-grad')
+  {{-- @include('main.layouts.partials.mainpage.wave-b-w-grad') --}}
 
 @endsection

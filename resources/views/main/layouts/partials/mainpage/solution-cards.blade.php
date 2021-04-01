@@ -1,4 +1,4 @@
-<section class="bg-white py-8">
+<section class="bg-white py-16">
   <div class="container max-w-6xl mx-auto m-8">
     <p class="w-full my-2 text-3xl sm:text-5xl font-bold leading-tight text-center text-gray-800">
       {{__('mainpage.ready-solutions')}}
@@ -24,7 +24,7 @@
         </article>
         <div class="flex items-center justify-center">
           <a href="{{$solution->url}}">
-            <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
               {{__('site.readmore')}}
             </button>
           </a>

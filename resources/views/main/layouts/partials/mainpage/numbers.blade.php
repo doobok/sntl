@@ -1,4 +1,4 @@
-<section class="container mx-auto text-center py-6 mb-12">
+<section class="container mx-auto text-center py-16">
   <div class="container mx-auto flex flex-wrap pt-4 pb-12">
     <p class="w-full my-2 text-3xl sm:text-5xl font-bold leading-tight text-center text-white">
       {{__('mainpage.some-facts')}}

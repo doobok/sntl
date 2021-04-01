@@ -1,7 +1,7 @@
 <template>
   <div @mouseover="openLng = true" @mouseleave="leaveLng()" class="relative inline-block text-left ml-3">
     <div>
-      <button @click="openLng = ! openLng" class="underline inline-flex items-center justify-center p-2 rounded-md text-gray-600 opacity-40 hover:opacity-100 hover:text-gray-500 bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-700 transition duration-150 ease-in-out text-sm">
+      <button @click="openLng = ! openLng" class="underline inline-flex items-center justify-center p-2 text-gray-600 opacity-40 hover:opacity-100 hover:text-gray-500 bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-700 transition duration-150 ease-in-out text-sm">
         <span class="uppercase" v-if="lang != 'uk'">{{lang}}</span>
         <span class="uppercase" v-else>UA</span>
         <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -9,7 +9,7 @@
         </svg>
       </button>
     </div>
-    <div v-show="openLng" class="origin-top-right absolute right-0 mt-0 w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+    <div v-show="openLng" class="origin-top-right absolute right-0 mt-0 w-auto shadow-lg bg-white ring-1 ring-black ring-opacity-5">
       <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
 
         <a v-for="l in langs" v-if="l.code != lang" :href="'/setlocale/' + l.code" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" rel="nofollow">{{l.name}}</a>

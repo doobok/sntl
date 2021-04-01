@@ -12,7 +12,7 @@ return [
 
     'services' => 'Послуги',
 
-    'portfolio' => 'Портфоліо',
+    'portfolio' => 'Наші проекти',
     'ab-us' => 'Про компанію',
     'contacts' => 'Контакти',
 

@@ -1,7 +1,7 @@
 <!--Footer-->
-<footer class="">
+<footer>
   <div class="container mx-auto px-8">
-    <div class="w-full flex flex-col md:flex-row py-6">
+    <div class="w-full flex flex-col md:flex-row py-16">
       <div class="flex-1 mb-6 text-black flex justify-center">
         <a class="no-underline hover:no-underline" href="{{route('mainpage')}}">
           <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 637.4 812.4" height="120" width="150">
@@ -62,7 +62,8 @@
           </li>
         </ul>
       </div>
-      <div class="flex-1 text-white">
+      {{-- social buttons --}}
+      {{-- <div class="flex-1 text-white">
         <div class="flex flex-wrap content-center justify-center">
           <div class="mx-1">
             <span class="mx-1">
@@ -86,7 +87,7 @@
             </span>
           </div>
         </div>
-      </div>
+      </div> --}}
     </div>
     <p class="text-center text-gray-200 pb-2">{{ __('site.copyright') }} © {{ config('app.name') }} 2015 - {{ date("Y") }}</p>
   </div>

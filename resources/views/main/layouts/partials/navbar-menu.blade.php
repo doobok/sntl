@@ -1,8 +1,8 @@
   <ul class="list-reset lg:flex justify-end flex-1 items-center">
         <!--Regular Link-->
-        <li class="menu--border">
+        {{-- <li class="menu--border">
           <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">{{__('menu.solutions')}}</a>
-        </li>
+        </li> --}}
 
         <!--Toggleable Link-->
         <!-- <li class="toggleable hover:bg-blue-800 hover:text-white">

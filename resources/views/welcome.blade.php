@@ -16,7 +16,7 @@
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
       .gradient {
-        background: linear-gradient(90deg, #46ab9f 0%, #56bbaf 100%);
+        background: linear-gradient(90deg, #1FACB9 0%, #56bbaf 100%);
       }
     </style>
   </head>

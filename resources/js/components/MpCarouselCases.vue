@@ -11,7 +11,7 @@
 
       <slide>
             <div class="py-6 px-3">
-                <div class="bg-white shadow-xl rounded-lg overflow-hidden w--card">
+                <div class="bg-white shadow-xl overflow-hidden w--card">
                   <img :src="'/storage/' + getCrop(p.image)" :alt="p.heading">
                     <div class="p-4">
                         <p class="text-regular text-gray-700">{{p.heading}}</p>
@@ -26,7 +26,7 @@
                         </div>
                         <div class="flex-1 inline-flex items-center">
                           <a :href="getUrl(p.slug)">
-                            <button class="hover:underline gradient text-white font-bold rounded-full my-1 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                            <button class="hover:underline gradient text-white font-bold my-1 py-3 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                               {{$ml.get('readmore')}}
                             </button>
                           </a>
