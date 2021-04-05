@@ -12,7 +12,17 @@ module.exports = {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: theme => ({
+             'right-multigons': "url('/multigons.svg')",
+            })
         },
+        backgroundSize: {
+          'auto': 'auto',
+          'cover': 'cover',
+          'contain': 'contain',
+          '50': '50%',
+          '100': '100%',
+        }
     },
 
     variants: {

@@ -1,4 +1,4 @@
-<section class="bg-white py-16">
+<section class="bg-white bg-right-top bg-no-repeat bg-100 lg:bg-50 bg-right-multigons py-16">
   <div class="container max-w-6xl mx-auto m-8">
     <p class="w-full my-2 text-3xl sm:text-5xl font-bold leading-tight text-center text-gray-800">
       {{__('mainpage.ready-solutions')}}
