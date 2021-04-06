@@ -22,11 +22,13 @@
     ])
   @endcomponent
 
-  <section class="bg-white text-gray-700 py-4">
+  <section class="text-gray-700 py-4">
     <article class="container mx-auto py-4 px-4">
 
       @isset($page->image)
-        <img class="w-full sm:w-1/2 float-right" src="{{ Voyager::image( $page->image ) }}" alt="{{$page->getTranslatedAttribute('heading')}}">
+        <div class="w-full sm:w-1/2 p-6 pt-0 mb-6 float-right">
+          <img class="w-full shadow-lg border-2 rounded-sm" src="{{ Voyager::image( $page->image ) }}" alt="{{$page->getTranslatedAttribute('heading')}}">
+        </div>
       @endisset
 
       <div>

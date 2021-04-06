@@ -16,7 +16,7 @@
 @endsection
 
 @section('content')
-
+<div class="gradient">
   @include('main.layouts.partials.mainpage.first-screen')
   {{-- @include('main.layouts.partials.wave-t') --}}
 
@@ -31,6 +31,8 @@
   @include('main.layouts.partials.mainpage.vendors')
   {{-- @include('main.layouts.partials.mainpage.wave-w-g') --}}
   @include('main.layouts.partials.mainpage.last-screen')
+</div>
+
 
 
   {{-- @include('main.layouts.partials.mainpage.wave-b-w-grad') --}}

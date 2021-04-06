@@ -10,7 +10,9 @@
 
 @include('main.layouts.partials.in-dev')
 
+<div class="bg-white bg-right-top bg-no-repeat bg-100 lg:bg-50 bg-right-multigons">
 @yield('content')
+</div>
 
 @include('main.layouts.partials.footer')
 

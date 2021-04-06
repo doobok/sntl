@@ -32,7 +32,7 @@
       </ol>
   </div>
 </section>
-<section class="bg-white pl-4 pt-6 pb-1">
+<section class="pl-4 pt-6 pb-1">
   <div class="container mx-auto px-2">
     <h1 class="w-full my-2 text-4xl md:text-5xl font-bold leading-tight text-gray-700">
       {{$h1}}

@@ -21,7 +21,7 @@
     ])
   @endcomponent
 
-  <section class="bg-white text-gray-700 py-4">
+  <section class="text-gray-700 py-4">
     <article class="container mx-auto py-4 px-4">
 
       <div class="flex flex-wrap pt-8 sm:flex-row flex-col-reverse">

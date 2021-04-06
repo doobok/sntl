@@ -25,7 +25,7 @@
     ])
   @endcomponent
 
-  <section class="bg-white text-gray-700 py-4">
+  <section class="text-gray-700 py-4">
     <div class="container mx-auto py-4 px-2">
       <div class="flex flex-wrap">
         <div class="w-full sm:w-1/2 lg:w-1/3 p-6">

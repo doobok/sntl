@@ -24,7 +24,7 @@
     'h1' => __('site.our-partners')
     ])
   @endcomponent
-  <section class="bg-white text-gray-700 py-4">
+  <section class="text-gray-700 py-4">
     <div class="container mx-auto py-4 px-2">
 
       <div class="flex flex-wrap items-center place-items-auto">
