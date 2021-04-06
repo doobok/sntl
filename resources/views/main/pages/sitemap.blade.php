@@ -21,7 +21,7 @@
     ])
   @endcomponent
 
-  <section class="text-gray-700 py-4">
+  <section class="text-gray-700 pt-4">
     <article class="container mx-auto py-4 px-4">
 
       <div class="flex flex-wrap pt-8 sm:flex-row flex-col-reverse">
@@ -55,7 +55,9 @@
       </div>
 
     </article>
+
+    @include('main.layouts.partials.tr.bottom')
+
   </section>
 
-  {{-- @include('main.layouts.partials.wave-b') --}}
 @endsection

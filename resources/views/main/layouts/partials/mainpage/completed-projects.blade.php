@@ -1,4 +1,7 @@
-<section class="bg-white py-16">
+<section class="bg-white bg-left-bottom bg-no-repeat bg-100 lg:bg-50 bg-left-multigons">
+
+  @include('main.layouts.partials.tr.top')
+
   <div class="antialiased font-sans pb-12">
   <div class="max-w-6xl mx-auto">
       <h2 class="container my-2 pt-4 text-3xl sm:text-5xl font-bold leading-tight text-center text-gray-800">
@@ -20,4 +23,7 @@
 
     </div>
   </div>
+
+  @include('main.layouts.partials.tr.bottom_gray')
+
 </section>

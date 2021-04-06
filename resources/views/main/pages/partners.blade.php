@@ -41,6 +41,6 @@
     </div>
   </section>
 
+  @include('main.layouts.partials.tr.bottom')
 
-  {{-- @include('main.layouts.partials.wave-b') --}}
 @endsection

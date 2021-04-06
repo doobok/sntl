@@ -13,15 +13,17 @@ module.exports = {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
             backgroundImage: theme => ({
-             'right-multigons': "url('/multigons.svg')",
+             'right-multigons': "url('/poligons/poligon.svg')",
+             'left-multigons': "url('/poligons/r.svg')",
+             'right-white-multigons': "url('/poligons/w.svg')",
             })
         },
         backgroundSize: {
           'auto': 'auto',
           'cover': 'cover',
           'contain': 'contain',
-          '50': '50%',
-          '100': '100%',
+          '50': '30%',
+          '100': '70%',
         }
     },
 

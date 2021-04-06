@@ -1,4 +1,7 @@
-<section class="bg-white py-16">
+<section class="bg-white">
+
+  @include('main.layouts.partials.tr.top_gray')
+
   <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
     <h2 class="w-full my-2 text-3xl sm:text-5xl font-bold leading-tight text-center text-gray-800">
       {{__('site.our-partners')}}
@@ -18,4 +21,7 @@
     </div>
 
   </div>
+
+  @include('main.layouts.partials.tr.bottom_gray')
+
 </section>
