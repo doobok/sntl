@@ -2,7 +2,7 @@
 
             <!--Hoverable Link-->
             <li class="hoverable menu--border hidden lg:block">
-              <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">{{__('menu.services')}}</a>
+              <a href="{{route('page', 'services')}}" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">{{__('menu.services')}}</a>
               <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl gradient border-t-2">
                 <div class="container mx-auto w-full flex flex-wrap justify-between mx-2">
                   {{-- <div class="w-full text-white mb-8">
@@ -14,36 +14,45 @@
                       <a href="#" class="flex items-center">
                         <svg class="h-5 mb-3 mr-4 fill-current text-white"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M13 23v-14h11l-11 14zm-2 0v-14h-11l11 14zm-3.796-22l4.736 5.413 4.06-5.413h-8.796zm11.061.313l-4.265 5.687h10l-5.735-5.687zm-8.469 5.687l-4.479-5.119-5.317 5.119h9.796z"/>
+                          <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-name')}}</p>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-video')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
                       <a href="#" class="flex items-center">
                         <svg class="h-5 mb-3 mr-4 fill-current text-white"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M13 23v-14h11l-11 14zm-2 0v-14h-11l11 14zm-3.796-22l4.736 5.413 4.06-5.413h-8.796zm11.061.313l-4.265 5.687h10l-5.735-5.687zm-8.469 5.687l-4.479-5.119-5.317 5.119h9.796z"/>
+                          <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-name')}}</p>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-skd')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
                       <a href="#" class="flex items-center">
                         <svg class="h-5 mb-3 mr-4 fill-current text-white"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M13 23v-14h11l-11 14zm-2 0v-14h-11l11 14zm-3.796-22l4.736 5.413 4.06-5.413h-8.796zm11.061.313l-4.265 5.687h10l-5.735-5.687zm-8.469 5.687l-4.479-5.119-5.317 5.119h9.796z"/>
+                          <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-name')}}</p>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-secur')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
                       <a href="#" class="flex items-center">
                         <svg class="h-5 mb-3 mr-4 fill-current text-white"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M13 23v-14h11l-11 14zm-2 0v-14h-11l11 14zm-3.796-22l4.736 5.413 4.06-5.413h-8.796zm11.061.313l-4.265 5.687h10l-5.735-5.687zm-8.469 5.687l-4.479-5.119-5.317 5.119h9.796z"/>
+                          <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-name')}}</p>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-ksb')}}</p>
+                      </a>
+                    </div>
+                    <div class="mb-2">
+                      <a href="#" class="flex items-center">
+                        <svg class="h-5 mb-3 mr-4 fill-current text-white"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path d="M0 9h24v6h-24z"/>
+                        </svg>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-biometr')}}</p>
                       </a>
                     </div>
                   </ul>
@@ -52,36 +61,45 @@
                       <a href="#" class="flex items-center">
                         <svg class="h-5 mb-3 mr-4 fill-current text-white"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M13 23v-14h11l-11 14zm-2 0v-14h-11l11 14zm-3.796-22l4.736 5.413 4.06-5.413h-8.796zm11.061.313l-4.265 5.687h10l-5.735-5.687zm-8.469 5.687l-4.479-5.119-5.317 5.119h9.796z"/>
+                          <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-name')}}</p>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-lowcur')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
                       <a href="#" class="flex items-center">
                         <svg class="h-5 mb-3 mr-4 fill-current text-white"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M13 23v-14h11l-11 14zm-2 0v-14h-11l11 14zm-3.796-22l4.736 5.413 4.06-5.413h-8.796zm11.061.313l-4.265 5.687h10l-5.735-5.687zm-8.469 5.687l-4.479-5.119-5.317 5.119h9.796z"/>
+                          <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-name')}}</p>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-sks')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
                       <a href="#" class="flex items-center">
                         <svg class="h-5 mb-3 mr-4 fill-current text-white"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M13 23v-14h11l-11 14zm-2 0v-14h-11l11 14zm-3.796-22l4.736 5.413 4.06-5.413h-8.796zm11.061.313l-4.265 5.687h10l-5.735-5.687zm-8.469 5.687l-4.479-5.119-5.317 5.119h9.796z"/>
+                          <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-name')}}</p>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-domohhone')}}</p>
                       </a>
                     </div>
-                    <div>
+                    <div class="mb-2">
                       <a href="#" class="flex items-center">
                         <svg class="h-5 mb-3 mr-4 fill-current text-white"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M13 23v-14h11l-11 14zm-2 0v-14h-11l11 14zm-3.796-22l4.736 5.413 4.06-5.413h-8.796zm11.061.313l-4.265 5.687h10l-5.735-5.687zm-8.469 5.687l-4.479-5.119-5.317 5.119h9.796z"/>
+                          <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-name')}}</p>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-dispatching')}}</p>
+                      </a>
+                    </div>
+                    <div class="mb-2">
+                      <a href="#" class="flex items-center">
+                        <svg class="h-5 mb-3 mr-4 fill-current text-white"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path d="M0 9h24v6h-24z"/>
+                        </svg>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-projects')}}</p>
                       </a>
                     </div>
                   </ul>
@@ -90,27 +108,36 @@
                       <a href="#" class="flex items-center">
                         <svg class="h-5 mb-3 mr-4 fill-current text-white"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M13 23v-14h11l-11 14zm-2 0v-14h-11l11 14zm-3.796-22l4.736 5.413 4.06-5.413h-8.796zm11.061.313l-4.265 5.687h10l-5.735-5.687zm-8.469 5.687l-4.479-5.119-5.317 5.119h9.796z"/>
+                          <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-name')}}</p>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-multimedia')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
                       <a href="#" class="flex items-center">
                         <svg class="h-5 mb-3 mr-4 fill-current text-white"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M13 23v-14h11l-11 14zm-2 0v-14h-11l11 14zm-3.796-22l4.736 5.413 4.06-5.413h-8.796zm11.061.313l-4.265 5.687h10l-5.735-5.687zm-8.469 5.687l-4.479-5.119-5.317 5.119h9.796z"/>
+                          <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-name')}}</p>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-conf')}}</p>
                       </a>
                     </div>
-                    <div>
+                    <div class="mb-2">
                       <a href="#" class="flex items-center">
                         <svg class="h-5 mb-3 mr-4 fill-current text-white"
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M13 23v-14h11l-11 14zm-2 0v-14h-11l11 14zm-3.796-22l4.736 5.413 4.06-5.413h-8.796zm11.061.313l-4.265 5.687h10l-5.735-5.687zm-8.469 5.687l-4.479-5.119-5.317 5.119h9.796z"/>
+                          <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-name')}}</p>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-lvs')}}</p>
+                      </a>
+                    </div>
+                    <div class="mb-2">
+                      <a href="#" class="flex items-center">
+                        <svg class="h-5 mb-3 mr-4 fill-current text-white"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path d="M0 9h24v6h-24z"/>
+                        </svg>
+                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-vols')}}</p>
                       </a>
                     </div>
                   </ul>
@@ -119,7 +146,7 @@
             </li>
 
             <li class="menu--border block lg:hidden">
-              <a href="#" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">{{__('menu.services')}}</a>
+              <a href="{{route('page', 'services')}}" class="inline-block relative py-2 px-2 lg:p-5 text-sm lg:text-base font-bold">{{__('menu.services')}}</a>
             </li>
 
             <li class="menu--border">

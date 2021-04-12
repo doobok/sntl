@@ -21,7 +21,7 @@
     ])
   @endcomponent
 
-  <section class="bg-white text-gray-700 py-4">
+  <section class="text-gray-700 py-4">
     <article class="container mx-auto py-4 px-4 flex flex-col justify-center">
 
       <div class="w-full m:w-1/2">
@@ -34,7 +34,7 @@
       </div>
       <div class="flex justify-center">
         <a href="{{route('mainpage')}}">
-          <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             {{__('site.mainpage')}}
           </button>
         </a>
