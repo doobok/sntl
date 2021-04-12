@@ -18,6 +18,7 @@ export default new MLCreate({
         errName: 'Укажите Ваше имя',
         errPhone: 'Укажите правильный номер телефона',
         succesMsg: 'Контакт успешно отправлен, ожидайте звонка',
+        setRequest: 'Оставить заявку',
 
     }),
 
@@ -33,6 +34,7 @@ export default new MLCreate({
         errName: 'Вкажіть Ваше ім\'я',
         errPhone: 'Вкажіть вірний номер телефону',
         succesMsg: 'Контакт успішно відправлений, очікуйте дзвінка',
+        setRequest: 'Залишити заявку',
 
     }),
 
@@ -48,6 +50,7 @@ export default new MLCreate({
         errName: 'Please enter your name',
         errPhone: 'Please enter correct phone number',
         succesMsg: 'Contact successfully sent, await call',
+        setRequest: 'Leave a request',
 
     }),
   ]

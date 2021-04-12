@@ -7,17 +7,20 @@ use App\Models\Customer;
 use App\Models\Project;
 use App\Models\Vendor;
 use App\Models\Solution;
+use App\Models\Slide;
 
 class MainpagesController extends Controller
 {
     public function index()
     {
+      $slides = Slide::where('active', 1)->orderBy('order', 'asc')->get()->translate(\App::getLocale());
       $solutions = Solution::where('active', 1)->orderBy('order', 'asc')->get();
       $customers = Customer::where('active', 1)->orderBy('order', 'desc')->get();
       $vendors = Vendor::where('active', 1)->where('important', 1)->orderBy('order', 'desc')->get();
       $projects = Project::orderBy('id', 'desc')->limit(10)->get()->translate(\App::getLocale());
 
       return view('main.pages.index', [
+        'slides' => $slides,
         'solutions' => $solutions,
         'customers' => $customers,
         'vendors' => $vendors,

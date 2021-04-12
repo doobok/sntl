@@ -2,12 +2,6 @@
   @include('main.layouts.partials.tr.top')
 
   <div class="container max-w-6xl mx-auto m-8">
-    <p class="w-full my-2 text-3xl sm:text-5xl font-bold leading-tight text-center text-gray-800">
-      {{__('mainpage.ready-solutions')}}
-    </p>
-    <div class="w-full mb-4">
-      <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-    </div>
 
     @foreach ($solutions as $indx => $solution)
 

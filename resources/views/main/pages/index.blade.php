@@ -17,8 +17,7 @@
 
 @section('content')
 <div class="gradient">
-  @include('main.layouts.partials.mainpage.first-screen')
-  {{-- @include('main.layouts.partials.wave-t') --}}
+  <mp-slideshow lang="{{app()->getLocale()}}" :slides="{{$slides}}"></mp-slideshow>
 
   @include('main.layouts.partials.mainpage.solution-cards')
   {{-- @include('main.layouts.partials.wave-b') --}}
