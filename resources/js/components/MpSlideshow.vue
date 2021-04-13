@@ -3,8 +3,8 @@
       autoplay
     >
 
-      <div v-for="slide in slides" :key="slide.id" class="slide pt-16 bg-cover h-full w-100 flex items-center"
-      :style="'background-image:url(\'/storage/' + slide.image + '\');'"
+      <div v-for="slide in slides" :key="slide.id" class="slide pt-16 bg-cover h-full w-100 flex items-center bg-slide1"
+
       >
         <div class="container flex flex-col py-12 lg:py-32 px-3 mx-auto justify-center items-center">
             <div class="my-4 p-2 text-4xl text-center lg:text-5xl font-bold leading-tight bg-gray-700 bg-opacity-50">
@@ -58,6 +58,10 @@ export default {
         }
        return link;
      },
+     getCover(url) {
+       return 'background-image: url(\'/storage/' + url + '\')';
+       // url('/slides/s1.webp')
+     }
   }
 
 }
