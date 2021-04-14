@@ -18,7 +18,6 @@ module.exports = {
              'right-multigons': "url('/poligons/poligon.svg')",
              'left-multigons': "url('/poligons/r.svg')",
              'right-white-multigons': "url('/poligons/w.svg')",
-             'slide1': "url('/slides/s1.webp')",
             })
         },
         backgroundSize: {

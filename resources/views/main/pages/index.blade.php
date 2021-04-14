@@ -17,17 +17,8 @@
 
 @section('content')
 <div class="gradient">
-  <div uk-slideshow>
-    <ul class="uk-slideshow-items">
-      @foreach ($slides as $slide)
-        <li>
-            <img src="/storage/{{$slide->image}}" alt="" uk-cover>
-        </li>
-      @endforeach
 
-    </ul>
-</div>
-  {{-- <mp-slideshow lang="{{app()->getLocale()}}" :slides="{{$slides}}"></mp-slideshow> --}}
+  <mp-slideshow lang="{{app()->getLocale()}}" :slides="{{$slides}}"></mp-slideshow>
 
   @include('main.layouts.partials.mainpage.services-cards')
   @include('main.layouts.partials.mainpage.numbers')
