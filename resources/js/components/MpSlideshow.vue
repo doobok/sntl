@@ -1,9 +1,13 @@
 <template>
-    <agile
-      autoplay
-    >
+  <div uk-slideshow>
+    <ul v-for="slide in slides" :key="slide.id" class="">
+        <li>
+            <img :src="'/storage/' + slide.image" alt="" uk-cover>
+        </li>
+    </ul>
+  </div>
 
-      <div v-for="slide in slides" :key="slide.id" class="slide pt-16 bg-cover h-full w-100 flex items-center bg-slide1"
+      <!-- <div v-for="slide in slides" :key="slide.id" class="slide pt-16 bg-cover h-full w-100 flex items-center bg-slide1"
 
       >
         <div class="container flex flex-col py-12 lg:py-32 px-3 mx-auto justify-center items-center">
@@ -27,15 +31,8 @@
               </template>
             </p>
         </div>
-      </div>
-      <template class="flex" slot="prevButton">
-        <svg xmlns="http://www.w3.org/2000/svg" class="hidden md:block" viewBox="0 0 24 24" fill="#fff"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
-      </template>
-      <template class="flex" slot="nextButton">
-        <svg xmlns="http://www.w3.org/2000/svg" class="hidden md:block" viewBox="0 0 24 24" fill="#fff"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
-      </template>
+      </div> -->
 
-    </agile>
 </template>
 
 <script>
