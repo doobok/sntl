@@ -16,7 +16,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-video')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-video')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
@@ -25,7 +25,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-skd')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-skd')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
@@ -34,7 +34,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-secur')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-secur')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
@@ -43,7 +43,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-ksb')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-ksb')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
@@ -52,7 +52,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-biometr')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-biometr')}}</p>
                       </a>
                     </div>
                   </ul>
@@ -63,7 +63,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-lowcur')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-lowcur')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
@@ -72,7 +72,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-sks')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-sks')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
@@ -81,7 +81,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-domohhone')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-domohhone')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
@@ -90,7 +90,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-dispatching')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-dispatching')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
@@ -99,7 +99,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-projects')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-projects')}}</p>
                       </a>
                     </div>
                   </ul>
@@ -110,7 +110,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-multimedia')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-multimedia')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
@@ -119,7 +119,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-conf')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-conf')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
@@ -128,7 +128,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-lvs')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-lvs')}}</p>
                       </a>
                     </div>
                     <div class="mb-2">
@@ -137,7 +137,7 @@
                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                           <path d="M0 9h24v6h-24z"/>
                         </svg>
-                        <p class="font-bold text-base text-white mb-2">{{__('menu.service-vols')}}</p>
+                        <p class="font-bold text-base text-white mb-2 menu--border">{{__('menu.service-vols')}}</p>
                       </a>
                     </div>
                   </ul>

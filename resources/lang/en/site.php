@@ -27,6 +27,8 @@ return [
     'see-partners' => 'All partners',
     'our-сustomers' => 'Our customers',
     'сustomers' => 'Customers',
+    'services' => 'Services',
+    'our-services' => 'Our services',
 
 
 

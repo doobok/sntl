@@ -61,4 +61,13 @@ class MainpagesController extends Controller
         'vendors' => $vendors
       ]);
     }
+
+    public function services()
+    {
+      $services = Solution::where('active', 1)->orderBy('order', 'asc')->get();
+
+      return view('main.pages.services', [
+        'services' => $services
+      ]);
+    }
 }
