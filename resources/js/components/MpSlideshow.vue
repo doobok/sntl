@@ -3,17 +3,18 @@
       autoplay
       speed="800"
       throttleDelay="50"
+      centerMode
     >
 
-      <div v-for="slide in slides" :key="slide.id" class="slide pt-16 bg-cover h-full w-100 flex items-center"
+      <div v-for="slide in slides" :key="slide.id" class="slide pt-16 bg-cover bg-center h-full w-100 flex items-center"
         :style="'background-image:url(\'/storage/' + slide.image + '\');'"
       >
         <div class="container flex flex-col py-12 lg:py-32 px-3 mx-auto justify-center items-center">
-            <div class="my-4 p-2 text-4xl text-center lg:text-5xl font-bold leading-tight bg-gray-700 bg-opacity-50">
+            <div class="my-4 p-2 text-4xl text-center lg:text-5xl font-bold leading-tight">
               <h1 v-if="slide.order == 1">{{slide.title}}</h1>
               <h2 v-else>{{slide.title}}</h2>
             </div>
-            <p class="leading-normal p-2 text-center text-xl mb-8 w-full lg:w-2/3 bg-gray-700 bg-opacity-50">
+            <p class="leading-normal p-2 text-center text-xl mb-8 w-full lg:w-2/3">
               {{slide.body}}
             </p>
             <p class="mx-auto">
