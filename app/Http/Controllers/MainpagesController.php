@@ -17,7 +17,7 @@ class MainpagesController extends Controller
       $solutions = Solution::where('active', 1)->where('mainpage', 1)->orderBy('order', 'asc')->get();
       $customers = Customer::where('active', 1)->orderBy('order', 'desc')->get();
       $vendors = Vendor::where('active', 1)->where('important', 1)->orderBy('order', 'desc')->get();
-      $projects = Project::orderBy('id', 'desc')->limit(10)->get()->translate(\App::getLocale());
+      $projects = Project::orderBy('order', 'desc')->limit(10)->get()->translate(\App::getLocale());
 
       return view('main.pages.index', [
         'slides' => $slides,
