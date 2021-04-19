@@ -1,17 +1,14 @@
 <template>
-  <div class="">
-    <carousel
-        :perPageCustom="[[300, 1], [768, 2], [1024, 3]]"
-        autoplay
-        :autoplayTimeout="5000"
-        loop
-        scrollPerPage
-        >
-      <template v-for="p in projects">
-
-      <slide>
+  <agile
+    autoplay
+    :slidesToShow="this.itemsCount"
+    :speed="800"
+    :throttleDelay="50"
+    :navButtons="false"
+  >
+      <div v-for="p in projects">
             <div class="py-6 px-3">
-                <div class="bg-white shadow-xl overflow-hidden w--card">
+                <div class="bg-white shadow-xl overflow-hidden">
                   <img :src="'/storage/' + getCrop(p.image)" :alt="p.heading">
                     <div class="p-4">
                         <p class="text-regular text-gray-700">{{p.heading}}</p>
@@ -36,17 +33,23 @@
                 </div>
             </div>
           </slide>
-        </template>
-        </carousel>
+        </div>
 
-  </div>
-</template>
+      </agile>
+  </template>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel';
+import { VueAgile } from 'vue-agile'
 export default {
   props: ['lang', 'projects'],
-  components: { Carousel, Slide },
+  components: {
+        agile: VueAgile
+  },
+  data(){
+    return{
+      width: 0,
+    }
+  },
   methods: {
     getUrl (url) {
       let link = null;
@@ -62,14 +65,28 @@ export default {
      },
      getCrop (img) {
        return img.replace(/\./g, '-cropped.');
-     }
+     },
+     updateWidth() {
+       this.width = window.innerWidth;
+     },
+  },
+  computed: {
+    itemsCount() {
+      if (this.width > 900) {
+        return 3;
+      } else if (this.width > 550) {
+        return 2;
+      } else {
+        return 1;
+      }
+    }
+  },
+  created() {
+    window.addEventListener('resize', this.updateWidth);
+  },
+  mounted() {
+    this.width = window.innerWidth;
   }
 }
 
 </script>
-
-<style>
-.w--card {
-  width: 340px;
-}
-</style>

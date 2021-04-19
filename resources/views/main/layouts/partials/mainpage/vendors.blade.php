@@ -10,9 +10,9 @@
       <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
 
-    <mp-carousel-logo :items="{{$vendors}}"></mp-carousel-logo>
+    <mp-carousel-logo :items="{{$vendors}}" class="py-1 sm:py-10"></mp-carousel-logo>
 
-    <div class="flex items-center justify-center pt-8">
+    <div class="flex items-center justify-center pt-4">
       <a href="{{route('partners')}}">
         <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold my-6 py-6 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           {{__('site.see-partners')}}

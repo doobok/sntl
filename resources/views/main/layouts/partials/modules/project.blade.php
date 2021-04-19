@@ -1,7 +1,7 @@
 <div class="w-full sm:w-1/2 lg:w-1/3 p-6">
   <div class="bg-white rounded-t rounded-b-none overflow-hidden shadow">
     <a href="{{route('project', [$project->slug]) }}" class="flex flex-wrap no-underline hover:no-underline">
-      <img class="w-full" src="{{ Voyager::image( $project->thumbnail('cropped') ) }}" alt="{{$project->getTranslatedAttribute('heading')}}">
+      <img class="w-full flex items-center" src="{{ Voyager::image( $project->thumbnail('cropped') ) }}" alt="{{$project->getTranslatedAttribute('heading')}}">
       <div class="w-full text-lg font-bold text-gray-800 mt-6 px-6">
         {{$project->getTranslatedAttribute('heading')}}
       </div>
