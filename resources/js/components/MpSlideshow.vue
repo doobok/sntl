@@ -1,7 +1,9 @@
 <template>
     <agile
       autoplay
-      :speed="800"
+      :autoplaySpeed="6000"
+      :changeDelay="2200"
+      :speed="1600"
       :throttleDelay="50"
       centerMode
     >
