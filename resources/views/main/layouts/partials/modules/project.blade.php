@@ -1,5 +1,5 @@
-<div class="w-full sm:w-1/2 lg:w-1/3 p-6">
-  <div class="bg-white rounded-t rounded-b-none overflow-hidden shadow">
+<div class="w-full flex items-stretch rounded-t sm:w-1/2 lg:w-1/3 p-6">
+  <div class="bg-white rounded-b-none overflow-hidden shadow">
     <a href="{{route('project', [$project->slug]) }}" class="flex flex-wrap no-underline hover:no-underline">
       <div class="w-full flex items-center">
         <img class="self-center" src="{{ Voyager::image( $project->thumbnail('cropped') ) }}" alt="{{$project->getTranslatedAttribute('heading')}}">
@@ -7,7 +7,7 @@
       <div class="w-full text-lg font-bold text-gray-800 mt-6 px-6">
         {{$project->getTranslatedAttribute('heading')}}
       </div>
-      <div class="w-full text-lg text-gray-800 mt-2 mb-2 px-6">
+      <div class="w-full text-lg text-gray-800 mt-2 mb-2 px-6 md:h-34 lg:h-26">
         {{ mb_substr($project->getTranslatedAttribute('teaser'), 0, 70) }}
           ...
       </div>
@@ -18,14 +18,15 @@
           <p><span class="text-gray-900 font-bold text-lg">{{$project->year}}</span></p>
       </div>
     </a>
+    <div class="flex justify-center p-4 border-t border-gray-300 text-gray-700 bg-white overflow-hidden p-6">
+        <div>
+          <a href="{{route('project', [$project->slug]) }}">
+            <button class="hover:underline gradient text-white font-bold my-1 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+              {{__('site.readmore')}}
+            </button>
+          </a>
+        </div>
+    </div>
   </div>
-  <div class="flex justify-center p-4 border-t border-gray-300 text-gray-700 bg-white rounded-b rounded-t-none overflow-hidden shadow shadow-lg p-6">
-      <div>
-        <a href="{{route('project', [$project->slug]) }}">
-          <button class="hover:underline gradient text-white font-bold my-1 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            {{__('site.readmore')}}
-          </button>
-        </a>
-      </div>
-  </div>
+
 </div>

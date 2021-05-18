@@ -47,6 +47,10 @@
 .hoverable:hover .mega-menu {
   display: block;
 }
+.txt-contured {
+  text-shadow: black 1px 1px 0, black -1px -1px 0, 
+                 black -1px 1px 0, black 1px -1px 0;
+}
 
 .indev {
     position: fixed;

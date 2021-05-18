@@ -3,9 +3,10 @@
     <a href="#" class="w-full h-full shadow-xl flex flex-wrap justify-left items-left content-end bg-cover bg-center"
     :style="'background-image:url({{ Voyager::image( $solution->image ) }});'"
     >
-    <div class="w-3/4 self-end">
-      <div class="text-white bg-gray-700 text-lg text-left font-bold my-6 px-6">
-        <p class="py-1">
+    <div class="w-full self-end">
+      {{-- <div class="text-white bg-gray-700 text-lg text-left font-bold my-6 px-6"> --}}
+      <div class="text-white uppercase text-xl text-left font-black my-6 px-6">
+        <p class="py-1 txt-contured">
           {{$solution->getTranslatedAttribute('title')}}
         </p>
       </div>

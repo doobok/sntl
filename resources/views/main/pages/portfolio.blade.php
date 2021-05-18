@@ -25,10 +25,10 @@
     ])
   @endcomponent
 
-  <section class="text-gray-700 py-4">
+  <section class="text-gray-700 pt-2">
     <article class="container mx-auto py-4 px-2">
       <div class="flex flex-wrap">
-        <div class="w-full sm:w-1/2 p-6">
+        <div class="w-full sm:w-1/2 px-6">
           <blockquote class="text-xl">
             {!!__('seo.portfolio-body')!!}
           </blockquote>
@@ -74,8 +74,8 @@
     </article>
   </section>
 
-  <section class="py-8">
-    <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+  <section class="pb-8">
+    <div class="container mx-auto flex flex-wrap pt-0 pb-12">
       {{-- <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
         {{__('site.completed-projects')}}
       </h2>
@@ -83,7 +83,7 @@
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
       </div> --}}
 
-      <div class="flex flex-wrap items-start place-items-auto">
+      <div class="flex flex-wrap items-stretch place-items-stretch">
 
         @foreach ($projects as $project)
           @include('main.layouts.partials.modules.project')

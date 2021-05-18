@@ -13,6 +13,6 @@ class Project extends Model
     use Translatable;
     use Resizable;
 
-    protected $translatable = ['body', 'heading', 'teaser'];
+    protected $translatable = ['body', 'heading', 'teaser', 'description'];
 
 }

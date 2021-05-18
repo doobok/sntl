@@ -26,8 +26,8 @@
     <article class="container mx-auto py-4 px-2">
       <div class="flex flex-wrap">
         <div class="w-full sm:w-1/2 p-6 pt-0">
-          <blockquote class="text-2xl">
-            {{$page->getTranslatedAttribute('teaser')}}
+          <blockquote class="text-xl">
+            {!!$page->getTranslatedAttribute('description')!!}
           </blockquote>
         </div>
         <div class="w-full sm:w-1/2 p-6 pt-0 mb-9">
