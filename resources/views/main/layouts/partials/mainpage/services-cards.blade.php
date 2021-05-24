@@ -18,6 +18,23 @@
 
     @endforeach
 
+    <div class="w-full sm:w-1/2 lg:w-1/3 p-2 h-64 hover:border-4 border-gray-700 gradient--hovered">
+      <a href="#" class="w-full h-full shadow-xl flex flex-wrap justify-left items-left content-end bg-cover bg-center"
+      :style="'background-image:url(/services-pic.jpg);'"      
+      >
+      <div class="w-full self-end">
+        <div class="text-white uppercase text-xl text-left font-black my-6 px-6">
+          <p class="py-1 txt-contured">
+            {{__('site.another-services')}}
+          </p>
+        </div>
+      </div>
+
+      </a>
+    </div>
+
+
+
   </div>
 
   @include('main.layouts.partials.tr.bottom')
